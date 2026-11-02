@@ -1,0 +1,1035 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil KOMLEK 877</title>
+
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/komlek2.png" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #071b12;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        .navbar-custom {
+            background: rgba(3, 25, 15, 0.97);
+            padding: 15px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #b99837;
+        }
+
+        .brand {
+            color: #e5c15c;
+            font-size: 22px;
+            font-weight: 900;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .brand:hover {
+            color: #fff;
+        }
+
+        .brand span {
+            display: block;
+            font-size: 11px;
+            color: white;
+            letter-spacing: 3px;
+        }
+
+        .navbar-custom ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .navbar-custom ul a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .navbar-custom ul a:hover {
+            color: #e5c15c;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 550px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 80px 8%;
+            background:
+                linear-gradient(90deg, rgba(3,25,15,.98), rgba(3,35,20,.75), rgba(3,25,15,.25)),
+                url('images/profil-komlek.jpg') center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 650px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-label {
+            color: #e5bd47;
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 5px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            font-weight: 900;
+            line-height: 1.05;
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #e5bd47;
+        }
+
+        .hero p {
+            color: #ddd;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .btn-gold {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 30px;
+            border: 2px solid #e5bd47;
+            border-radius: 40px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .btn-gold:hover {
+            background: #e5bd47;
+            color: #071b12;
+            transform: translateY(-4px);
+        }
+
+        /* SECTION */
+        .section {
+            padding: 85px 8%;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: #e5bd47;
+        }
+
+        .section-title::before {
+            content: "// ";
+            color: #fff;
+        }
+
+        .section p {
+            color: #d1d9d3;
+            line-height: 1.9;
+            font-size: 15px;
+        }
+
+        /* TENTANG */
+        .about {
+            background: linear-gradient(135deg, #0d3020, #071b12);
+        }
+
+        .about-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 3px solid #c5a33e;
+            box-shadow: 0 15px 35px rgba(0,0,0,.4);
+        }
+
+        /* FEATURE */
+        .feature-section {
+            background: #091f15;
+        }
+
+        .feature-box {
+            background: linear-gradient(145deg, #143b27, #0a2116);
+            border: 1px solid rgba(229,189,71,.3);
+            padding: 35px 25px;
+            height: 100%;
+            border-radius: 18px;
+            transition: .4s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            border-color: #e5bd47;
+            box-shadow: 0 15px 30px rgba(0,0,0,.3);
+        }
+
+        .feature-box i {
+            color: #e5bd47;
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+
+        .feature-box h4 {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        /* SEJARAH */
+        .history {
+            background: linear-gradient(135deg, #071b12, #123a25);
+        }
+
+        .history-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 2px solid #c5a33e;
+        }
+
+        /* GALERI */
+        .gallery {
+            background: #091f15;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid rgba(229,189,71,.5);
+            transition: .4s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.04);
+            border-color: #e5bd47;
+        }
+
+        /* QUOTE */
+        .quote {
+            text-align: center;
+            padding: 90px 15px;
+            background: linear-gradient(135deg, #17442b, #06180f);
+        }
+
+        .quote h2 {
+            color: #e5bd47;
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #03140b;
+            padding: 30px 15px;
+            text-align: center;
+            border-top: 1px solid #b99837;
+        }
+
+        footer p {
+            color: #aaa;
+            font-size: 13px;
+            margin: 0;
+        }
+
+        /* MOBILE */
+        @media(max-width: 768px) {
+            .navbar-custom {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .navbar-custom ul {
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 15px;
+                padding: 0;
+            }
+
+            .hero {
+                min-height: 450px;
+                padding: 65px 7%;
+            }
+
+            .section {
+                padding: 60px 7%;
+            }
+
+            .about-img {
+                margin-top: 25px;
+                height: 250px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<!-- HERO -->
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content-center">
+        <h1>
+            <span class="profil-header">
+                 Pusat Komunikasi dan Elektronika
+                 Angkatan Darat
+            </span>
+        </h1>
+
+        <p>
+    Pusat Komunikasi dan Elektronika Angkatan Darat
+    (PUSKOMLEKAD) merupakan Badan Pelaksana Pusat
+    di tingkat Markas Besar TNI Angkatan Darat yang
+    bertugas membina dan menyelenggarakan fungsi
+    komunikasi dan elektronika di lingkungan TNI
+    Angkatan Darat.
+</p>
+
+<p>
+    Dalam pelaksanaan tugasnya, PUSKOMLEKAD
+    menyelenggarakan pembinaan kecabangan serta
+    mendukung komunikasi, elektronika, sistem kendali
+    operasi dan informasi, peperangan elektronika,
+    fotografi militer, serta pembekalan dan pemeliharaan
+    alat komunikasi dan elektronika.
+</p>
+    </div>
+
+    <!-- PROFIL -->
+    <section class="profil-pusk">
+        <div class="profil-logo">
+            <img src="images/komlek2.png"
+                alt="Lambang Pusat Komunikasi dan Elektronika Angkatan Darat">
+            <p>Lambang Puskomlekad</p>
+        </div>
+
+    <div class="profil-info">
+        <table>
+    <tr>
+        <th>Dibentuk</th>
+        <td>23 November 1945 (umur 80)</td>
+    </tr>
+
+    <tr>
+        <th>Negara</th>
+        <td>
+            <span class="bendera"></span>
+            Indonesia
+        </td>
+    </tr>
+
+    <tr>
+        <th>Tipe unit</th>
+        <td>Komunikasi & Elektronika</td>
+    </tr>
+
+    <tr>
+        <th>Peran</th>
+        <td>Satuan Bantuan Tempur</td>
+    </tr>
+
+    <tr>
+        <th>Bagian dari</th>
+        <td>TNI Angkatan Darat</td>
+    </tr>
+
+    <tr>
+        <th>Pelindung</th>
+        <td>Tentara Nasional Indonesia</td>
+    </tr>
+
+    <tr>
+        <th>Moto</th>
+        <td>
+            <i>Cighra Apta Nirbhaya</i>
+            <br>
+            (Sanskerta, artinya: "Cepat, tepat, dan aman")
+        </td>
+    </tr>
+
+    <tr>
+        <th>Baret</th>
+        <td>
+            <span class="baret">HIJAU</span>
+        </td>
+    </tr>
+
+    <tr>
+        <th>Maskot</th>
+        <td>Merpati Perang</td>
+    </tr>
+
+    <tr>
+        <th>Ulang tahun</th>
+        <td>23 November</td>
+    </tr>
+
+    <tr>
+        <th>Situs web</th>
+        <td>puskomlekad.tni-ad.mil.id</td>
+    </tr>
+</table>
+    </div>
+
+    
+<!-- BAGIAN TOKOH -->
+<div class="profil-footer" align="center">
+    Tokoh
+</div>
+
+<div class="profil-info">
+    <table>
+        <tr>
+            <th>Kepala</th>
+            <td>
+                <span class="lambang-bintang">★</span>
+                Mayor Jenderal TNI
+                    Iroth Sonny Edhie, M.H.I.
+            </td>
+        </tr>
+
+        <tr>
+            <th>Wakil Kepala</th>
+            <td>
+                <span class="lambang-bintang">★</span>
+                Brigadir Jenderal TNI
+                    Dede Mulyana, S.Sos., M.Tr.(Han).
+            </td>
+        </tr>
+
+        <tr>
+            <th>Inspektur</th>
+            <td>
+                <span class="lambang-bintang">★</span>
+                
+                    Brigadir Jenderal TNI
+                    Indra Gumay Fitri
+                
+            </td>
+        </tr>
+    </table>
+</div>
+
+</section>
+
+</section>
+   
+
+
+
+
+<style>
+
+    
+/* =====================================
+   RESPONSIVE WEBSITE KOMLEK 877
+   ANDROID, IPHONE, TABLET
+===================================== */
+
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* =====================================
+   TABLET
+   ===================================== */
+@media screen and (max-width: 991px) {
+
+    .hero {
+        padding: 65px 5%;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .profil-pusk {
+        max-width: 400px;
+    }
+
+    .section {
+        padding: 65px 5%;
+    }
+
+    .about-img {
+        max-width: 100%;
+        height: 320px;
+    }
+
+    .history-img {
+        height: 270px;
+    }
+
+    .gallery img {
+        height: 220px;
+    }
+}
+
+/* =====================================
+   HP ANDROID DAN IPHONE
+   ===================================== */
+@media screen and (max-width: 768px) {
+
+    /* HERO */
+    .hero {
+        width: 100%;
+        min-height: auto;
+        padding: 55px 18px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        background-position: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-label {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 8vw, 46px);
+        line-height: 1.2;
+        margin: 12px 0;
+    }
+
+    .hero p {
+        font-size: 13px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* PROFIL PUSKOMLEKAD */
+    .profil-pusk {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    /* JUDUL PROFIL */
+.profil-header {
+    width: 100%;
+    min-height: 75px;
+    background: linear-gradient(
+        135deg,
+        #0b2b1b,
+        #1b5033,
+        #0b2b1b
+    );
+
+    color: #e5bd47;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    padding: 12px 15px;
+    border-bottom: 2px solid #c5a33e;
+
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+
+/* FOTO LAMBANG */
+.profil-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+.profil-logo img {
+    width: 100%;
+    max-width: 300px;
+    height: 270px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.profil-logo p {
+    font-size: 16px;
+    margin: 5px 0 0;
+    text-align: center;
+}
+
+    .profil-info {
+        padding: 5px;
+    }
+
+    .profil-info table {
+        width: 100%;
+        font-size: 13px;
+        line-height: 1.5;
+        table-layout: fixed;
+    }
+
+    .profil-info th {
+        width: 32%;
+        padding: 5px 3px;
+    }
+
+    .profil-info td {
+        width: 68%;
+        padding: 5px 3px;
+        overflow-wrap: anywhere;
+    }
+
+    .profil-footer {
+        font-size: 16px;
+        padding: 8px;
+        width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #aaa;
+    }
+
+    .lambang-bintang {
+        width: 24px;
+        height: 17px;
+        line-height: 17px;
+        font-size: 11px;
+    }
+
+    .bendera {
+        width: 24px;
+        height: 15px;
+    }
+
+    /* SECTION */
+    .section {
+        padding: 50px 18px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        line-height: 1.4;
+        margin-bottom: 18px;
+    }
+
+    .section p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    /* TENTANG KOMLEK */
+    .about-img {
+        width: 100%;
+        max-width: 100%;
+        height: 260px;
+        margin: 25px auto 0;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* FEATURE */
+    .feature-box {
+        padding: 28px 20px;
+        margin-bottom: 5px;
+    }
+
+    .feature-box i {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .feature-box h4 {
+        font-size: 17px;
+    }
+
+    /* SEJARAH */
+    .history-img {
+        width: 100%;
+        height: 240px;
+    }
+
+    /* GALERI */
+    .gallery img {
+        width: 100%;
+        height: 230px;
+        margin-bottom: 5px;
+    }
+
+    /* QUOTE */
+    .quote {
+        padding: 60px 18px;
+    }
+
+    .quote h2 {
+        font-size: 21px;
+        line-height: 1.6;
+    }
+
+    .quote p {
+        font-size: 13px;
+    }
+
+    .btn-gold {
+        padding: 12px 23px;
+        font-size: 13px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* =====================================
+   HP KECIL
+   LAYAR 320px - 375px
+   ===================================== */
+@media screen and (max-width: 375px) {
+
+    .hero {
+        padding: 40px 14px 30px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+   .profil-header {
+        min-height: 65px;
+        font-size: 15px;
+        letter-spacing: .5px;
+        padding: 10px;
+    }
+
+    .profil-logo img {
+        height: 210px;
+        max-width: 230px;
+    }
+
+    .profil-info table {
+        font-size: 12px;
+    }
+
+    .profil-info th {
+        width: 34%;
+    }
+
+    .profil-info td {
+        width: 66%;
+    }
+
+    .section {
+        padding: 40px 14px;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
+    .about-img {
+        height: 220px;
+    }
+
+    .quote h2 {
+        font-size: 18px;
+    }
+}
+
+/* =====================================
+   IPHONE DENGAN LAYAR LEBAR
+   DAN HP BESAR
+   ===================================== */
+@media screen and (min-width: 390px) and
+       (max-width: 768px) {
+
+    .profil-pusk {
+        max-width: 430px;
+    }
+
+    .profil-info table {
+        font-size: 14px;
+    }
+
+    .profil-logo img {
+        height: 250px;
+    }
+}
+
+/* =====================================
+   LAYAR LANDSCAPE HP
+   ===================================== */
+@media screen and (max-height: 500px)
+       and (orientation: landscape)
+       and (max-width: 950px) {
+
+    .hero {
+        min-height: auto;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .profil-logo img {
+        height: 190px;
+    }
+}
+</style>
+
+<!-- TENTANG KOMLEK -->
+<section class="section about" id="tentang">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <h2 class="section-title">Tentang KOMLEK</h2>
+
+                <p>
+                    Komunikasi dan Elektronika (KOMLEK) merupakan
+                    unsur pendukung yang berperan penting dalam
+                    penyelenggaraan komunikasi dan penyampaian
+                    informasi di lingkungan satuan.
+                </p>
+
+                <p>
+                    Melalui dukungan personel dan perangkat
+                    komunikasi, KOMLEK membantu kelancaran
+                    koordinasi serta mendukung pelaksanaan
+                    tugas secara efektif dan terarah.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/komlek1.jpg"
+                     class="about-img"
+                     alt="Kegiatan komunikasi KOMLEK">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TUGAS DAN FUNGSI -->
+<section class="section feature-section" id="tugas">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Tugas dan Fungsi KOMLEK</h2>
+            <p>Mendukung komunikasi dan koordinasi dalam pelaksanaan tugas.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <i class="fas fa-walkie-talkie"></i>
+                    <h4>Komunikasi</h4>
+                    <p>
+                        Mendukung kelancaran komunikasi
+                        antar personel melalui perangkat
+                        komunikasi yang tersedia.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <i class="fas fa-tower-broadcast"></i>
+                    <h4>Perangkat Komunikasi</h4>
+                    <p>
+                        Mendukung kesiapan serta pemeliharaan
+                        perangkat komunikasi dan elektronika
+                        sesuai kebutuhan satuan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <i class="fas fa-network-wired"></i>
+                    <h4>Koordinasi</h4>
+                    <p>
+                        Membantu penyampaian informasi
+                        dan koordinasi untuk menunjang
+                        kelancaran kegiatan satuan.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SEJARAH -->
+<section class="section history">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-5">
+                <img src="images/komlek2.jpg"
+                     class="history-img"
+                     alt="Dokumentasi KOMLEK">
+            </div>
+
+            <div class="col-md-7 mt-4 mt-md-0">
+                <h2 class="section-title">Sejarah KOMLEK</h2>
+
+                <p>
+                    Bagian ini berisi perjalanan sejarah
+                    KOMLEK 877, mulai dari awal pembentukan,
+                    perkembangan organisasi, hingga berbagai
+                    pengalaman dalam mendukung tugas satuan.
+                </p>
+
+                <p>
+                    Tambahkan sejarah resmi kesatuan agar
+                    pengunjung dapat mengenal lebih jauh
+                    perjalanan dan identitas KOMLEK.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- GALERI -->
+<section class="section gallery" id="galeri">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Dokumentasi KOMLEK</h2>
+            <p>Galeri kegiatan dan dokumentasi personel KOMLEK.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4 mb-4">
+                <img src="images/komlek3.jpg" alt="Kegiatan KOMLEK 1">
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <img src="images/komlek4.jpg" alt="Kegiatan KOMLEK 2">
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <img src="images/komlek5.jpg" alt="Kegiatan KOMLEK 3">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote">
+    <div class="container">
+        <h2>
+            "Dengan Komunikasi yang Handal,<br>
+            Tugas dapat Dilaksanakan dengan Optimal"
+        </h2>
+
+        <p class="mt-3">
+            KOMLEK 877 - Bersama Membangun Komunikasi
+        </p>
+
+        <a href="index.html" class="btn-gold">
+            <i class="fas fa-arrow-left"></i>
+            Kembali ke Beranda
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 TONKOM 877 | Profil Komlek</p>
+    <p class="mt-2">Bersama Rakyat, TNI Kuat</p>
+</footer>
+
+</body>
+</html>

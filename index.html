@@ -17,7 +17,7 @@
   <meta name="generator" content="Themefisher Small Apps Template v1.0">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/komlekad.jpg" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/komlek2.png" />
   
   <!-- PLUGINS CSS STYLE -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -29,13 +29,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
-  <!-- CUSTOM CSS -->
+  <!-- CUSTOM CSS -->  
   <link href="css/style.css" rel="stylesheet">
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TONKOM 877 | Website Kesatuan</title>
+    <title>TONKOM 877 | BIINMAFFO</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,7 +58,7 @@
         body {
             font-family: 'Montserrat', sans-serif;
             background: #0b1510;
-            color: white;
+            color: rgb(31, 30, 30);
         }
 
         a {
@@ -594,218 +594,1229 @@
                 transition-duration: 0.01ms !important;
             }
         }
+        
+/* =========================================
+   RESPONSIVE INDEX TONKOM 877
+   LAPTOP - TABLET - ANDROID - IPHONE
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ===== LAPTOP BESAR ===== */
+@media (min-width: 1200px) {
+    .hero-container {
+        max-width: 1450px;
+        margin: 0 auto;
+        gap: 60px;
+    }
+
+    .hero-visual {
+        max-width: 680px;
+    }
+
+    .hero-content {
+        max-width: 680px;
+    }
+
+    .about-tonkom,
+    .ht-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* ===== LAPTOP KECIL ===== */
+@media (min-width: 701px) and (max-width: 1199px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 45px 4%;
+    }
+
+    .photo-frame {
+        height: 450px;
+    }
+
+    .hero-content {
+        padding-top: 40px;
+    }
+
+    .hero-heading h1 {
+        font-size: clamp(26px, 3.5vw, 42px);
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .ht-image-wrapper {
+        min-height: 500px;
+    }
+
+    .ht-product-image {
+        max-width: 330px;
+    }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 850px) {
+    .nav-container {
+        width: 94%;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: 25px;
+        padding: 35px 5%;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 650px;
+        margin: auto;
+        padding: 25px 0 35px;
+    }
+
+    .photo-frame {
+        height: 430px;
+    }
+
+    .hero-heading {
+        text-align: center;
+    }
+
+    .hero-description {
+        max-width: 100%;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-footer {
+        position: static;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .feature-wrapper {
+        padding: 15px;
+    }
+
+    .ht-image-wrapper {
+        min-height: 480px;
+    }
+}
+
+/* ===== ANDROID DAN IPHONE ===== */
+@media (max-width: 700px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    /* NAVBAR */
+    .nav-container {
+        min-height: 75px;
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        gap: 8px;
+    }
+
+    .brand-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand-divider {
+        height: 35px;
+    }
+
+    .brand-text h2 {
+        font-size: 16px;
+    }
+
+    .brand-text p {
+        font-size: 7px;
+        letter-spacing: 0.5px;
+    }
+
+    .navbar-toggler {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-menu {
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    /* HERO */
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 25px 18px 45px;
+    }
+
+    .hero-visual {
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .photo-frame {
+        width: 100%;
+        height: clamp(260px, 75vw, 380px);
+    }
+
+    .hero-content {
+        padding: 20px 0 25px;
+    }
+
+    .logo-wrapper {
+        width: 75px;
+        height: 75px;
+        top: -10px;
+    }
+
+    .hero-heading {
+        text-align: center;
+    }
+
+    .hero-heading h1 {
+        font-size: clamp(25px, 7vw, 36px);
+        overflow-wrap: anywhere;
+    }
+
+    .hero-description {
+        font-size: 13px;
+        line-height: 1.8;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .btn-primary {
+        min-height: 52px;
+        padding: 0 18px;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .hero-footer {
+        position: static;
+        justify-content: center;
+        margin-top: 35px;
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    /* BAGIAN PROFIL TONKOM */
+    .about-tonkom {
+        padding: 65px 0 55px;
+    }
+
+    .about-heading {
+        padding: 0 15px;
+        margin-bottom: 25px;
+    }
+
+    .about-heading h2 {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+    .about-heading p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .feature-wrapper {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .feature-wrapper > div {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .feature-card {
+        padding: 22px 12px;
+    }
+
+    .feature-card h4 {
+        font-size: 17px;
+    }
+
+    .feature-card p {
+        font-size: 13px;
+    }
+
+    /* BAGIAN REPEATER */
+    .feature.section {
+        padding: 55px 0;
+    }
+
+    .feature .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .feature .col-lg-6 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .feature-content {
+        margin-top: 30px;
+    }
+
+    .repeater-title {
+        font-size: 28px;
+    }
+
+    .feature-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .image-content {
+        margin-bottom: 20px;
+    }
+
+    /* BAGIAN HANDY TALKY */
+    .ht-section {
+        padding: 55px 0;
+    }
+
+    .ht-section .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ht-section .col-lg-6 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .ht-title {
+        font-size: clamp(30px, 9vw, 40px);
+    }
+
+    .ht-description {
+        font-size: 13px;
+    }
+
+    .ht-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .ht-comparison {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ht-image-wrapper {
+        min-height: 420px;
+    }
+
+    .ht-product-image {
+        max-width: 270px;
+        max-height: 390px;
+    }
+
+    .ht-circle-one {
+        width: 250px;
+        height: 250px;
+    }
+
+    .ht-circle-two {
+        width: 205px;
+        height: 205px;
+    }
+
+    /* VIDEO */
+    .video-promo {
+        min-height: 250px;
+        background-position: center;
+    }
+
+    /* GALERI FOTO */
+    .testimonial {
+        padding: 50px 0;
+    }
+
+    .testimonial-slider img {
+        width: 190px !important;
+        height: 190px !important;
+        object-fit: cover;
+    }
+
+    /* TOMBOL PLATFORM */
+    .call-to-action-app {
+        padding: 35px 10px;
+    }
+
+    .call-to-action-app .list-inline-item {
+        margin: 6px;
+    }
+
+    .call-to-action-app .btn-rounded-icon {
+        font-size: 12px;
+        padding: 10px 13px;
+    }
+
+    /* FOOTER */
+    footer .footer-main {
+        padding: 45px 0;
+    }
+
+    footer .block-2 {
+        margin-bottom: 25px;
+    }
+
+    footer .block img {
+        max-width: 130px;
+        height: auto;
+    }
+}
+
+/* ===== HP KECIL ===== */
+@media (max-width: 380px) {
+
+    .brand-logo {
+        width: 39px;
+        height: 39px;
+    }
+
+    .brand-text h2 {
+        font-size: 14px;
+    }
+
+    .brand-text p {
+        font-size: 6px;
+    }
+
+    .navbar-toggler {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .hero-heading h1 {
+        font-size: 25px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+    .btn-primary {
+        padding: 0 13px;
+        font-size: 12px;
+    }
+
+    .ht-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .ht-product-image {
+        max-width: 230px;
+    }
+
+    .testimonial-slider img {
+        width: 160px !important;
+        height: 160px !important;
+    }
+}
+
     </style>
+
 </head>
+<nav class="main-nav">
+  <div class="nav-container">
+
+    <!-- LOGO DAN NAMA -->
+    <a href="index.html" class="navbar-brand">
+      <img src="images/komlek2.png"
+           alt="Logo TONKOM 877"
+           class="brand-logo">
+
+      <span class="brand-divider"></span>
+
+      <div class="brand-text">
+        <h2>TONKOM <span>877</span></h2>
+        <p>Communication and electronics</p>
+      </div>
+    </a>
+
+    <!-- TOMBOL MENU HP -->
+    <div class="nav-actions">
+
+      <button class="search-btn"
+              type="button"
+              aria-label="Cari">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <button class="navbar-toggler"
+              type="button"
+              aria-label="Buka menu"
+              aria-expanded="false"
+              aria-controls="navMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <!-- MENU NAVIGASI -->
+    <ul class="nav-menu" id="navMenu">
+
+      <!-- BERANDA -->
+      <li class="nav-item dropdown active">
+        <a class="nav-link" href="#"
+           aria-expanded="false">
+          <i class="fa-solid fa-house"></i>
+          <span>BERANDA</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li>
+            <a class="dropdown-item" href="index.html">
+              <i class="fa-solid fa-house"></i>
+              <span>BERANDA</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="alusista.html">
+              <i class="fa-solid fa-tower-broadcast"></i>
+              <span>ALUSISTA KOMLEK</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="homepage-3.html">
+              <i class="fa-solid fa-lock"></i>
+              <span>SANDI TNI AD</span>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <!-- DOKUMENTASI KEGIATAN -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#"
+           aria-expanded="false">
+          <i class="fa-solid fa-folder-open"></i>
+          <span>DOKUMENTASI KEGIATAN</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li>
+            <a class="dropdown-item" href="team.html">
+              TEAM
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="career.html">
+              KEGIATAN
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="blog.html">
+              GALERI
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <!-- ABOUT -->
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>ABOUT</span>
+        </a>
+      </li>
+
+      <!-- CONTACT -->
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">
+          <i class="fa-solid fa-envelope"></i>
+          <span>CONTACT</span>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+<style>
+
+/* =========================
+   RESET DAN FONT
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================
+   NAVBAR UTAMA
+========================= */
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
+    background: linear-gradient(
+        110deg,
+        rgba(5, 24, 17, 0.98),
+        rgba(13, 43, 30, 0.96),
+        rgba(5, 22, 17, 0.98)
+    );
+
+    border-bottom: 2px solid #b5a05a;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+
+/* GARIS DEKORASI ATAS */
+
+.main-nav::before {
+    content: "";
+    display: block;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #b69b50,
+        #39db8b,
+        #b69b50,
+        transparent
+    );
+}
+
+/* CONTAINER */
+
+.nav-container {
+    width: min(1250px, 92%);
+    min-height: 94px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* =========================
+   LOGO DAN NAMA
+========================= */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-shrink: 0;
+}
+
+.brand-logo {
+    width: 66px;
+    height: 66px;
+    object-fit: contain;
+
+    filter: drop-shadow(
+        0 0 7px rgba(193,167,81,0.2)
+    );
+}
+
+.brand-divider {
+    width: 2px;
+    height: 48px;
+
+    background: linear-gradient(
+        transparent,
+        #c6ad62,
+        transparent
+    );
+}
+
+.brand-text h2 {
+    margin-bottom: 2px;
+    line-height: 1.1;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.brand-text h2 span {
+    color: #41d98a;
+}
+
+.brand-text p {
+    margin: 0;
+    line-height: 1.2;
+    color: #d2d8d2;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* =========================
+   MENU NAVBAR
+========================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 15px 14px;
+
+    color: #e7eee8;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+
+.nav-link > i:first-child {
+    color: #c5ac62;
+    font-size: 14px;
+}
+
+.nav-link .arrow {
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* HOVER MENU */
+
+.nav-link:hover,
+.nav-item.active > .nav-link {
+    color: #49e39a;
+    background: rgba(55,191,119,0.09);
+}
+
+.nav-link:hover > i:first-child,
+.nav-item.active > .nav-link > i:first-child {
+    color: #49e39a;
+}
+
+/* GARIS MENU AKTIF */
+
+.nav-item.active > .nav-link::after {
+    content: "";
+    position: absolute;
+
+    left: 14px;
+    right: 14px;
+    bottom: 5px;
+
+    height: 2px;
+    background: #42d98a;
+    border-radius: 5px;
+}
+
+/* =========================
+   DROPDOWN MENU
+========================= */
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+
+    min-width: 225px;
+    padding: 9px;
+
+    background: rgba(7,23,18,0.98);
+
+    border: 1px solid rgba(182,155,80,0.4);
+    border-radius: 10px;
+
+    box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: 0.25s ease;
+}
+
+/* DROPDOWN TERBUKA */
+
+.nav-item:hover > .dropdown-menu,
+.nav-item:focus-within > .dropdown-menu,
+.nav-item.open > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 12px 13px;
+
+    color: #dce7df;
+    font-size: 12px;
+    font-weight: 600;
+
+    border-radius: 6px;
+    transition: 0.25s ease;
+}
+
+.dropdown-menu a i {
+    color: #c5ac62;
+    font-size: 11px;
+}
+
+/* HOVER DROPDOWN */
+
+.dropdown-menu a:hover,
+.dropdown-menu a.active {
+    color: #4be49a;
+
+    background: linear-gradient(
+        90deg,
+        rgba(43,158,96,0.2),
+        rgba(43,158,96,0.04)
+    );
+
+    padding-left: 18px;
+}
+
+/* =========================
+   TOMBOL KANAN
+========================= */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-btn,
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    color: #f3f7f3;
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.13);
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-btn:hover,
+.navbar-toggler:hover {
+    color: #4be49a;
+    border-color: #4be49a;
+    background: rgba(55,191,119,0.12);
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 18px;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 1050px) {
+
+    .nav-container {
+        width: 94%;
+        gap: 10px;
+    }
+
+    .brand-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .brand-text h2 {
+        font-size: 19px;
+    }
+
+    .brand-text p {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .nav-link {
+        padding: 13px 9px;
+        font-size: 11px;
+    }
+
+    .nav-actions {
+        gap: 5px;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 850px) {
+
+    .nav-container {
+        min-height: 82px;
+        flex-wrap: wrap;
+        padding: 12px 0;
+    }
+
+    .brand-logo {
+        width: 54px;
+        height: 54px;
+    }
+
+    .brand-text h2 {
+        font-size: 18px;
+    }
+
+    .brand-text p {
+        font-size: 8px;
+    }
+
+    .brand-divider {
+        height: 40px;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        width: 100%;
+        gap: 4px;
+
+        padding: 12px 0 8px;
+
+        border-top: 1px solid rgba(255,255,255,0.12);
+
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        justify-content: flex-start;
+        padding: 14px;
+        font-size: 12px;
+    }
+
+    .nav-link .arrow {
+        margin-left: auto;
+    }
+
+    .nav-item.active > .nav-link::after {
+        display: none;
+    }
+
+    /* DROPDOWN HP */
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+
+        min-width: 0;
+        margin: 3px 0 8px;
+        padding: 6px;
+
+        background: rgba(0,0,0,0.18);
+
+        border: 0;
+        border-left: 2px solid #b69b50;
+        border-radius: 0;
+
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        transition: none;
+    }
+
+    .nav-item.open > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding: 12px 14px;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP KECIL
+========================= */
+
+@media (max-width: 480px) {
+
+    .nav-container {
+        width: 92%;
+    }
+
+    .brand-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .navbar-brand {
+        gap: 8px;
+    }
+
+    .brand-divider {
+        height: 34px;
+    }
+
+    .brand-text h2 {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    .brand-text p {
+        max-width: 165px;
+        font-size: 7px;
+        letter-spacing: 0.7px;
+    }
+
+    .navbar-toggler {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .brand-logo {
+        width: 39px;
+        height: 39px;
+    }
+
+    .brand-text h2 {
+        font-size: 14px;
+    }
+
+    .brand-text p {
+        font-size: 6px;
+    }
+
+    .navbar-toggler {
+        width: 35px;
+        height: 35px;
+    }
+}
+</style>
+
+<script>
+    
+// ===============================
+// NAVBAR TONKOM 877
+// ===============================
+
+const toggler = document.querySelector(".navbar-toggler");
+const navMenu = document.querySelector(".nav-menu");
+
+// TOGGLE MENU HP
+toggler.addEventListener("click", function () {
+
+    const isOpen = navMenu.classList.toggle("show");
+
+    toggler.setAttribute("aria-expanded", isOpen);
+
+    toggler.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+
+});
+
+// DROPDOWN MENU HP
+document.querySelectorAll(
+    ".nav-item > .nav-link"
+).forEach(link => {
+
+    link.addEventListener("click", function (event) {
+
+        const item = this.parentElement;
+
+        if (
+            window.innerWidth <= 850 &&
+            item.querySelector(":scope > .dropdown-menu")
+        ) {
+
+            event.preventDefault();
+
+            // TUTUP DROPDOWN LAIN
+            item.parentElement.querySelectorAll(
+                ":scope > .nav-item.open"
+            ).forEach(other => {
+
+                if (other !== item) {
+                    other.classList.remove("open");
+
+                    const otherLink = other.querySelector(
+                        ":scope > .nav-link"
+                    );
+
+                    if (otherLink) {
+                        otherLink.setAttribute(
+                            "aria-expanded", "false"
+                        );
+                    }
+                }
+
+            });
+
+            // BUKA / TUTUP DROPDOWN
+            const isOpen = item.classList.toggle("open");
+
+            this.setAttribute("aria-expanded", isOpen);
+
+        }
+
+    });
+
+});
+
+// TUTUP MENU SETELAH MEMILIH HALAMAN
+document.querySelectorAll(
+    ".nav-menu a:not(.nav-link)"
+).forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        if (window.innerWidth <= 850) {
+
+            navMenu.classList.remove("show");
+
+            toggler.setAttribute(
+                "aria-expanded", "false"
+            );
+
+            toggler.innerHTML =
+                '<i class="fa-solid fa-bars"></i>';
+
+        }
+
+    });
+
+});
+
+</script>
 
 <body>
 
     <!-- =========================
          NAVBAR TONKOM 877
     ========================= -->
-    <nav class="main-nav">
-        <div class="nav-container">
-
-            <!-- Logo dan Nama -->
-            <a href="index.html" class="navbar-brand">
-                <img src="images/komlekad.jpg"
-                     alt="Logo TONKOM 877"
-                     class="brand-logo">
-
-                <span class="brand-divider"></span>
-
-                <div class="brand-text">
-   				 <h2>TONKOM <span>877</span></h2>
-   					 <p>Communication and electronics</p>
-				</div>
-			</a>
-
-			<style>
-    .brand-text h2 {
-        margin-bottom: 2px;
-        line-height: 1.1;
-    }
-
-    .brand-text p {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 1.2;
-    }
-</style>
-
-<style>
-    .brand-text h2 {
-        margin-bottom: 2px;
-        line-height: 1.1;
-    }
-
-    .brand-text p {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 1.2;
-    }
-</style>
-            </a>
-
-            <!-- Tombol Menu HP -->
-            <div class="nav-actions">
-                <button class="search-btn"
-                        type="button"
-                        aria-label="Cari"
-                        onclick="alert('Fitur pencarian dapat ditambahkan.')">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-
-                <button class="navbar-toggler"
-                        type="button"
-                        aria-label="Buka menu"
-                        aria-expanded="false"
-                        aria-controls="navMenu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-
-            <!-- Menu Navigasi -->
-            
-<ul class="nav-menu" id="navMenu">
-
-    <!-- BERANDA -->
-    <li class="nav-item active">
-        <a href="index.html" class="nav-link">
-            <i class="fa-solid fa-house"></i>
-            BERANDA
-            <i class="fa-solid fa-chevron-down arrow"></i>
-        </a>
-
-        <ul class="dropdown-menu">
-            <li>
-                <a href="index.html" class="active">
-                    <i class="fa-solid fa-house"></i>
-                    &nbsp; Homepage
-                </a>
-            </li>
-
-            <li>
-                <a href="homepage-2.html">
-                    Homepage 2
-                </a>
-            </li>
-
-            <li>
-                <a href="homepage-3.html">
-                    Homepage 3
-                </a>
-            </li>
-        </ul>
-    </li>
-
-    <!-- DOKUMENTASI KEGIATAN -->
-    <li class="nav-item">
-        <a href="#" class="nav-link">
-            <i class="fa-solid fa-folder-open"></i>
-            DOKUMENTASI KEGIATAN
-            <i class="fa-solid fa-chevron-down arrow"></i>
-        </a>
-
-        <ul class="dropdown-menu">
-            <li><a href="team.html">Team</a></li>
-            <li><a href="career.html">Career</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </li>
-
-    <!-- ABOUT -->
-    <li class="nav-item">
-        <a href="about.html" class="nav-link">
-            <i class="fa-solid fa-circle-info"></i>
-            About
-        </a>
-    </li>
-
-    <!-- CONTACT -->
-    <li class="nav-item">
-        <a href="contact.html" class="nav-link">
-            <i class="fa-solid fa-envelope"></i>
-            Contact
-        </a>
-    </li>
-
-</ul>
-
-        </div>
-    </nav>
-
-    <!-- =========================
-         CONTOH HERO SECTION
-         Boleh diganti dengan hero
-         website Anda yang sekarang.
-    ========================= -->
-    
-
-    <script>
-        // Toggle menu pada HP
-        const toggler = document.querySelector(".navbar-toggler");
-        const navMenu = document.querySelector(".nav-menu");
-
-        toggler.addEventListener("click", function () {
-            const isOpen = navMenu.classList.toggle("show");
-
-            toggler.setAttribute("aria-expanded", isOpen);
-            toggler.innerHTML = isOpen
-                ? '<i class="fa-solid fa-xmark"></i>'
-                : '<i class="fa-solid fa-bars"></i>';
-        });
-
-        // Dropdown dapat dibuka dengan klik pada HP
-        document.querySelectorAll(".nav-item > .nav-link").forEach(link => {
-            link.addEventListener("click", function (event) {
-                const item = this.parentElement;
-
-                if (window.innerWidth <= 850 &&
-                    item.querySelector(":scope > .dropdown-menu")) {
-                    event.preventDefault();
-
-                    // Tutup dropdown lain pada tingkat yang sama
-                    item.parentElement.querySelectorAll(
-                        ":scope > .nav-item.open"
-                    ).forEach(other => {
-                        if (other !== item) {
-                            other.classList.remove("open");
-                        }
-                    });
-
-                    item.classList.toggle("open");
-                }
-            });
-        });
-
-        // Submenu bertingkat
-        document.querySelectorAll(".submenu-toggle").forEach(link => {
-            link.addEventListener("click", function (event) {
-                event.preventDefault();
-
-                const item = this.parentElement;
-
-                if (window.innerWidth <= 850) {
-                    item.classList.toggle("open");
-                }
-            });
-        });
-
-        // Tutup menu setelah memilih halaman pada HP
-        document.querySelectorAll(
-            ".nav-menu a:not(.nav-link):not(.submenu-toggle)"
-        ).forEach(link => {
-            link.addEventListener("click", function () {
-                if (window.innerWidth <= 850) {
-                    navMenu.classList.remove("show");
-                    toggler.setAttribute("aria-expanded", "false");
-                    toggler.innerHTML =
-                        '<i class="fa-solid fa-bars"></i>';
-                }
-            });
-        });
-    </script>
-
+   
 <!--====================================
 =            Hero Section            =
 =====================================-->
@@ -836,11 +1847,11 @@
                 <div class="green-line"></div>
 
                 <div class="visual-caption">
-                    <span>PROFESIONAL</span>
+                    <span>CIGHRA</span>
                     <span class="caption-dot"></span>
-                    <span>DISIPLIN</span>
+                    <span>APTA</span>
                     <span class="caption-dot"></span>
-                    <span>LOYALITAS</span>
+                    <span>NIRBHAYA</span>
                 </div>
 
             </section>
@@ -852,7 +1863,7 @@
                 <!-- Logo Kesatuan -->
                 <div class="logo-wrapper">
                     <img
-                        src="images/tonkom1.png"
+                        src="images/komlek2.png"
                         alt="Logo TONKOM 877"
                         class="unit-logo"
                     >
@@ -925,8 +1936,8 @@
 
                 <!-- Deskripsi -->
                 <p class="hero-description">
-                    Media informasi dan dokumentasi kegiatan
-                    TONKOM 877. Membangun prajurit yang profesional,
+                    Media informasi dan belajar bersama mengenal KOMLEK TNI AD
+                     Membangun prajurit yang profesional,
                     tangguh, disiplin, serta berdedikasi kepada
                     bangsa dan negara.
                 </p>
@@ -968,8 +1979,8 @@
             <h2>TONKOM <span>877</span></h2>
 
             <p>
-                Selamat datang di website TONKOM 877. Temukan informasi profil
-                kesatuan, berita, dokumentasi kegiatan, serta berbagai
+                Selamat datang di website TONKOM 877. Temukan informasi komlek
+              dokumentasi kegiatan, serta berbagai
                 informasi lainnya.
             </p>
         </div>
@@ -978,11 +1989,16 @@
         <div class="row feature-wrapper">
 
             <div class="col-md-4">
+
         		<div class="feature-card">
             	<i class="fas fa-user-shield feature-icon"></i>
-            	<h4>PROFIL SATUAN</h4>
+            	<h4>
+                    <a href="profil-komlek.html" class="feature-link">
+                        PROFIL KOMLEK
+                    </a>
+                </h4>
 				<p>
-					Mengenal sejarah dan identitas TONKOM.
+					Mengenal sejarah dan identitas KOMLEK.
 				</p>
         	</div>
     	</div>
@@ -1850,79 +2866,142 @@ a {
 ===================================-->
 <section class="feature section pt-0">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 ml-auto justify-content-center">
-				<!-- Feature Mockup -->
-				<div class="image-content" data-aos="fade-right">
-					<img class="img-fluid" src="images/rpt1.JPG" alt="iphone">
-				</div>
-			</div>
-			<div class="col-lg-6 mr-auto align-self-center">
-				<div class="feature-content">
-					<!-- Feature Title -->
-					
-<h1 class="repeater-title">
-    BELAJAR <span>REPEATER</span>
-</h1>
+    <div class="row align-items-center">
 
-<style>
-	
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
+        <!-- KOLOM FOTO SEBELAH KIRI -->
+        <div class="col-lg-6">
 
-.repeater-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    line-height: 1.3;
-    text-transform: uppercase;
-    color: #123d2b;
-    margin-bottom: 25px;
-    position: relative;
-}
+            <div class="image-content mb-4" data-aos="fade-right">
+                <img class="img-fluid"
+                     src="images/rptportable.jpg"
+                     alt="Repeater Portable">
+            </div>
 
-.repeater-title span {
-    color: #198754;
-    font-weight: 900;
-}
+            <div class="image-content" data-aos="fade-right">
+                <img class="img-fluid"
+                     src="images/prtble2.jpg"
+                     alt="Repeater Portable">
+            </div>
 
-/* Garis aksen modern */
-.repeater-title::after {
-    content: "";
-    display: block;
-    width: 75px;
-    height: 4px;
-    margin-top: 12px;
-    background: #d9b45b;
-    border-radius: 3px;
-}
+        </div>
 
-/* Tampilan HP */
-@media (max-width: 767px) {
-    .repeater-title {
-        font-size: 27px;
-        letter-spacing: 1px;
-    }
-}
+        <!-- KOLOM TEKS SEBELAH KANAN -->
+        <div class="col-lg-6">
+            <div class="feature-content" data-aos="fade-left">
 
-</style>
+                <!-- JUDUL -->
+                <h1 class="repeater-title">
+                     <span>REPEATER</span>
+                </h1>
 
-					<!-- Feature Description -->
-					<p class="desc"><b>skema pemasangan dan pengaturan COR repeater yang menghubungkan dua radio HT atau radio rig agar komunikasi dapat diteruskan dari satu radio ke radio lainnya. Skema ini memperlihatkan pengaturan frekuensi, rangkaian COR/COS, sambungan audio, PTT, antena pemancar, dan antena penerima.</b></p>
-				</div>
-				<!-- Testimonial Quote -->
-				<div class="testimonial">
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/profil.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Indra_   senkomm</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+                <!-- CSS JUDUL -->
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
+
+                    .repeater-title {
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 36px;
+                        font-weight: 800;
+                        letter-spacing: 1.5px;
+                        line-height: 1.3;
+                        text-transform: uppercase;
+                        color: #123d2b;
+                        margin-bottom: 25px;
+                        position: relative;
+                    }
+
+                    .repeater-title span {
+                        color: #198754;
+                        font-weight: 900;
+                    }
+
+                    .repeater-title::after {
+                        content: "";
+                        display: block;
+                        width: 75px;
+                        height: 4px;
+                        margin-top: 12px;
+                        background: #d9b45b;
+                        border-radius: 3px;
+                    }
+
+                    @media (max-width: 767px) {
+                        .repeater-title {
+                            font-size: 27px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                </style>
+
+                <!-- PENJELASAN -->
+                <p class="desc">
+                    <b>Repeater Portable</b> adalah perangkat komunikasi
+                    radio yang dirancang agar mudah dibawa, dipindahkan,
+                    dan digunakan di berbagai lokasi sesuai kebutuhan.
+                    Perangkat ini berfungsi menerima sinyal radio dari HT
+                    atau radio komunikasi, kemudian memancarkan kembali
+                    sinyal tersebut untuk memperluas jangkauan komunikasi.
+
+                    <br><br>
+
+                    Repeater portable biasanya memiliki desain ringkas,
+                    dilengkapi pelindung perangkat, antena, dan sumber
+                    daya listrik seperti baterai sehingga dapat digunakan
+                    tanpa harus selalu bergantung pada instalasi permanen.
+                </p>
+
+                <!-- FUNGSI REPEATER -->
+                <b>FUNGSI REPEATER PORTABLE</b>
+                <br><br>
+
+                1. Memperluas jangkauan komunikasi: Membantu memperluas
+                cakupan komunikasi radio.<br>
+
+                2. Mendukung komunikasi lapangan: Dapat digunakan di lokasi
+                yang belum memiliki fasilitas komunikasi permanen.<br>
+
+                3. Mudah dipindahkan: Desainnya memungkinkan perangkat
+                dibawa sesuai kebutuhan.<br>
+
+                4. Mendukung koordinasi: Membantu komunikasi antara
+                personel yang berada di lokasi berbeda.<br>
+
+                5. Fleksibilitas penggunaan: Dapat digunakan dalam kegiatan
+                latihan, kegiatan lapangan, dan dukungan komunikasi lainnya.
+
+                <br><br>
+
+                <!-- KOMPONEN -->
+                <b>KOMPONEN DAN FUNGSI</b>
+                <br><br>
+
+                - Receiver (RX): Menerima sinyal radio.<br>
+                - Transmitter (TX): Memancarkan kembali sinyal radio.<br>
+                - Antena: Menerima dan memancarkan gelombang radio.<br>
+                - Baterai: Menyediakan energi listrik.<br>
+                - Controller: Mengatur fungsi perangkat.<br>
+                - Casing pelindung: Melindungi perangkat dari benturan
+                dan kondisi lingkungan sesuai spesifikasinya.
+
+                <br><br>
+
+                <!-- PROFIL -->
+                <div class="testimonial">
+                    <ul class="list-inline meta">
+                        <li class="list-inline-item">
+                            <img src="images/profil.jpg" alt="Profil">
+                        </li>
+                        <li class="list-inline-item">
+                            Indra_ senkomm
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
 <section class="ht-section">
@@ -2769,6 +3848,8 @@ a {
   <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
   <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
   <script src="plugins/aos/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
   <!-- google map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
   <script src="plugins/google-map/gmap.js"></script>
@@ -2782,8 +3863,9 @@ const typingElement = document.getElementById("typing");
 const texts = [
 	"SELAMAT DATANG DI",
     "WEBSITE TONKOM 877",
-    "PROFESIONAL DAN DISIPLIN",
-    "SOLID DALAM PENGABDIAN"
+    "CEPAT,TEPAT,DAN AMAN",
+    
+    
 ];
 
 let textIndex = 0;
@@ -2816,6 +3898,47 @@ function typeEffect() {
 }
 
 typeEffect();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Ambil nama file halaman yang sedang dibuka
+    const currentPage = window.location.pathname
+        .split("/")
+        .pop()
+        .toLowerCase();
+
+    // Ambil semua link dropdown
+    const dropdownLinks = document.querySelectorAll(
+        "#navMenu .dropdown-menu .dropdown-item"
+    );
+
+    dropdownLinks.forEach(function (link) {
+
+        // Ambil nama file dari href
+        const linkPage = link.getAttribute("href")
+            .split("/")
+            .pop()
+            .toLowerCase();
+
+        // Cocokkan dengan halaman saat ini
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+
+            // Aktifkan juga menu induk BERANDA
+            const parentDropdown = link.closest(".nav-item.dropdown");
+
+            if (parentDropdown) {
+                parentDropdown.classList.add("active");
+            }
+        } else {
+            link.classList.remove("active");
+        }
+
+    });
+
+});
+
 
   </script>
 </body>
