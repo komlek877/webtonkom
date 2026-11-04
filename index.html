@@ -1651,6 +1651,31 @@ ul {
     .dropdown-menu a {
         padding: 12px 14px;
     }
+
+    /* Item dropdown HP: ikon + teks rata kiri */
+    #navMenu .dropdown-menu .dropdown-item {
+        justify-content: flex-start;
+        gap: 14px;
+        text-align: left;
+        color: #dce7df;
+        background: transparent;
+    }
+
+    /* Active state item dropdown HP */
+    #navMenu .dropdown-menu .dropdown-item:hover,
+    #navMenu .dropdown-menu .dropdown-item:focus,
+    #navMenu .dropdown-menu .dropdown-item.active {
+        color: #4be49a;
+        background: linear-gradient(
+            90deg,
+            rgba(43,158,96,0.2),
+            rgba(43,158,96,0.04)
+        );
+    }
+
+    #navMenu .dropdown-menu .dropdown-item.active i {
+        color: #4be49a;
+    }
 }
 
 /* =========================
@@ -1984,7 +2009,7 @@ document.querySelectorAll(
         <!-- Kartu fitur -->
         <div class="row feature-wrapper">
 
-            <div class="col-md-4">
+            <div class="col-4">
 
         		<div class="feature-card">
             	<i class="fas fa-user-shield feature-icon"></i>
@@ -1999,7 +2024,7 @@ document.querySelectorAll(
         	</div>
     	</div>
 
-            <div class="col-md-4">
+            <div class="col-4">
                 <div class="feature-card">
                     <i class="fas fa-satellite-dish feature-icon"></i>
                     <h4>KOMUNIKASI</h4>
@@ -2011,7 +2036,7 @@ document.querySelectorAll(
             </div>
             
 
-            <div class="col-md-4">
+            <div class="col-4">
                 <div class="feature-card">
                     <i class="fas fa-camera feature-icon"></i>
                     <h4>DOKUMENTASI KEGIATAN</h4>
@@ -2193,26 +2218,36 @@ document.querySelectorAll(
         font-size: 14px;
     }
 
+    /* 3 kartu tetap sejajar horizontal di HP */
     .feature-wrapper {
-        padding: 12px;
+        padding: 10px 4px;
         border-radius: 14px;
     }
 
+    .feature-wrapper > [class*="col-"] {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
     .feature-card {
-        padding: 25px 15px;
+        padding: 14px 4px;
     }
 
     .feature-icon {
-        font-size: 36px;
-        margin-bottom: 16px;
+        font-size: 26px;
+        margin-bottom: 10px;
     }
 
     .feature-card h4 {
-        font-size: 18px;
+        margin-bottom: 8px;
+        font-size: 12px;
+        line-height: 1.3;
+        word-break: break-word;
     }
 
     .feature-card p {
-        font-size: 14px;
+        font-size: 11px;
+        line-height: 1.5;
     }
 }
 </style>
@@ -2806,13 +2841,34 @@ a {
 
     .hero-footer {
         position: static;
-        justify-content: flex-end;
+        justify-content: center;
 
         margin-top: 45px;
         gap: 12px;
 
         font-size: 9px;
         letter-spacing: 4px;
+    }
+
+    /* Imbangi letter-spacing di huruf terakhir supaya benar-benar center */
+    .hero-footer span:not(.footer-line) {
+        margin-right: -4px;
+    }
+
+    /* Credit penulis (foto + nama) di tengah */
+    .testimonial {
+        width: 100%;
+    }
+
+    .testimonial ul.meta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
     }
 
     .footer-line {
@@ -3122,7 +3178,7 @@ a {
                         <li class="list-inline-item">
                             <img src="images/profil.jpg" alt="Profil">
                         </li>
-                        <li class="list-inline-item-center">
+                        <li class="list-inline-item">
                             Indra_ senkomm
                         </li>
                     </ul>

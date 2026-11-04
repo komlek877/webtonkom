@@ -859,6 +859,34 @@ img {
         height: 190px;
     }
 }
+
+/* =====================================
+   URUTAN DI HP: JUDUL, LAMBANG + DETAIL,
+   BARU DESKRIPSI
+   ===================================== */
+@media screen and (max-width: 768px) {
+
+    /* Lepas pembungkus supaya judul & deskripsi bisa diurutkan terpisah */
+    .hero .hero-content-center {
+        display: contents;
+    }
+
+    .hero .hero-content-center h1 {
+        order: -2;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hero .profil-pusk {
+        order: -1;
+    }
+
+    .hero .hero-content-center p {
+        width: 100%;
+        margin: 0;
+    }
+}
 </style>
 
 <!-- TENTANG KOMLEK -->
