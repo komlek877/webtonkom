@@ -1,0 +1,3024 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>TONKOM| BIINMAFFO</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/komlek2.png" />
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CUSTOM CSS -->  
+  <link href="css/style.css" rel="stylesheet">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TONKOM 877 | BIINMAFFO</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #0b1510;
+            color: rgb(31, 30, 30);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* =========================
+           NAVBAR UTAMA
+        ========================= */
+        .main-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            background:
+                linear-gradient(110deg,
+                    rgba(5, 24, 17, 0.98),
+                    rgba(13, 43, 30, 0.96),
+                    rgba(5, 22, 17, 0.98));
+            border-bottom: 2px solid #b5a05a;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        /* Garis dekorasi atas */
+        .main-nav::before {
+            content: "";
+            display: block;
+            height: 3px;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #b69b50,
+                #39db8b,
+                #b69b50,
+                transparent
+            );
+        }
+
+        .nav-container {
+            width: min(1250px, 92%);
+            min-height: 94px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        /* =========================
+           LOGO DAN NAMA KESATUAN
+        ========================= */
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            flex-shrink: 0;
+        }
+
+        .brand-logo {
+            width: 66px;
+            height: 66px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 7px rgba(193, 167, 81, 0.2));
+        }
+
+        .brand-divider {
+            width: 2px;
+            height: 48px;
+            background: linear-gradient(
+                transparent,
+                #c6ad62,
+                transparent
+            );
+        }
+
+        .brand-text h2 {
+            color: #ffffff;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .brand-text h2 span {
+            color: #41d98a;
+        }
+
+        .brand-text p {
+            margin-top: 5px;
+            color: #d2d8d2;
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* =========================
+           MENU NAVBAR
+        ========================= */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 15px 14px;
+            color: #e7eee8;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 7px;
+            transition: 0.3s ease;
+        }
+
+        .nav-link > i:first-child {
+            color: #c5ac62;
+            font-size: 14px;
+        }
+
+        .nav-link .arrow {
+            font-size: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-item.active > .nav-link {
+            color: #49e39a;
+            background: rgba(55, 191, 119, 0.09);
+        }
+
+        .nav-link:hover > i:first-child,
+        .nav-item.active > .nav-link > i:first-child {
+            color: #49e39a;
+        }
+
+        .nav-item.active > .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 14px;
+            right: 14px;
+            bottom: 5px;
+            height: 2px;
+            background: #42d98a;
+            border-radius: 5px;
+        }
+
+        /* =========================
+           DROPDOWN MENU
+        ========================= */
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 12px);
+            left: 0;
+            min-width: 225px;
+            padding: 9px;
+            background: rgba(7, 23, 18, 0.98);
+            border: 1px solid rgba(182, 155, 80, 0.4);
+            border-radius: 10px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: 0.25s ease;
+        }
+
+        .nav-item:hover > .dropdown-menu,
+        .nav-item:focus-within > .dropdown-menu,
+        .nav-item.open > .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 12px 13px;
+            color: #dce7df;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: 0.25s ease;
+        }
+
+        .dropdown-menu a i {
+            color: #c5ac62;
+            font-size: 11px;
+        }
+
+        .dropdown-menu a:hover,
+        .dropdown-menu a.active {
+            color: #4be49a;
+            background: linear-gradient(
+                90deg,
+                rgba(43, 158, 96, 0.2),
+                rgba(43, 158, 96, 0.04)
+            );
+            padding-left: 18px;
+        }
+
+        .dropdown-divider {
+            height: 1px;
+            margin: 7px 5px;
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        /* =========================
+           SUBMENU BERTINGKAT
+        ========================= */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu > .dropdown-menu {
+            top: -8px;
+            left: calc(100% + 8px);
+        }
+
+        /* =========================
+           TOMBOL KANAN
+        ========================= */
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-btn,
+        .navbar-toggler {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            color: #f3f7f3;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.13);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .search-btn:hover,
+        .navbar-toggler:hover {
+            color: #4be49a;
+            border-color: #4be49a;
+            background: rgba(55, 191, 119, 0.12);
+        }
+
+        .navbar-toggler {
+            display: none;
+            font-size: 18px;
+        }
+
+        /* =========================
+           AREA HERO CONTOH
+        ========================= */
+        .hero {
+            min-height: 550px;
+            display: flex;
+            align-items: center;
+            padding: 70px 5%;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(4, 18, 12, 0.92),
+                    rgba(4, 18, 12, 0.62),
+                    rgba(4, 18, 12, 0.25)
+                ),
+                url("images/biinmaffo.png") center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 9px 15px;
+            color: #e7d18b;
+            background: rgba(182, 155, 80, 0.12);
+            border: 1px solid rgba(182, 155, 80, 0.45);
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            margin-bottom: 20px;
+            font-size: clamp(32px, 5vw, 58px);
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: #4be49a;
+        }
+
+        .hero p {
+            max-width: 560px;
+            color: #d0d8d1;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 14px 23px;
+            color: #092016;
+            background: linear-gradient(135deg, #e2c979, #b99b4d);
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 800;
+            transition: 0.3s ease;
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 22px rgba(194, 164, 77, 0.25);
+        }
+
+        /* =========================
+           RESPONSIVE TABLET & HP
+        ========================= */
+        @media (max-width: 1050px) {
+            .nav-container {
+                width: 94%;
+                gap: 10px;
+            }
+
+            .brand-logo {
+                width: 55px;
+                height: 55px;
+            }
+
+            .brand-text h2 {
+                font-size: 19px;
+            }
+
+            .brand-text p {
+                font-size: 8px;
+                letter-spacing: 1px;
+            }
+
+            .nav-link {
+                padding: 13px 9px;
+                font-size: 11px;
+            }
+
+            .nav-actions {
+                gap: 5px;
+            }
+        }
+
+        @media (max-width: 850px) {
+            .nav-container {
+                min-height: 82px;
+                flex-wrap: wrap;
+                padding: 12px 0;
+            }
+
+            .brand-logo {
+                width: 54px;
+                height: 54px;
+            }
+
+            .brand-text h2 {
+                font-size: 18px;
+            }
+
+            .brand-text p {
+                font-size: 8px;
+            }
+
+            .brand-divider {
+                height: 40px;
+            }
+
+            .nav-actions {
+                margin-left: auto;
+            }
+
+            .navbar-toggler {
+                display: flex;
+            }
+
+            .search-btn {
+                display: none;
+            }
+
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+                gap: 4px;
+                padding: 12px 0 8px;
+                border-top: 1px solid rgba(255, 255, 255, 0.12);
+            }
+
+            .nav-menu.show {
+                display: flex;
+            }
+
+            .nav-item {
+                width: 100%;
+            }
+
+            .nav-link {
+                justify-content: flex-start;
+                padding: 14px;
+                font-size: 12px;
+            }
+
+            .nav-link .arrow {
+                margin-left: auto;
+            }
+
+            .nav-item.active > .nav-link::after {
+                display: none;
+            }
+
+            .dropdown-menu {
+                position: static;
+                display: none;
+                min-width: 0;
+                margin: 3px 0 8px;
+                padding: 6px;
+                background: rgba(0, 0, 0, 0.18);
+                border: 0;
+                border-left: 2px solid #b69b50;
+                border-radius: 0;
+                box-shadow: none;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                transition: none;
+            }
+
+            .nav-item.open > .dropdown-menu,
+            .dropdown-submenu.open > .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu a {
+                padding: 12px 14px;
+            }
+
+            .dropdown-submenu > .dropdown-menu {
+                position: static;
+                margin-left: 15px;
+                border-left-color: #42d98a;
+            }
+
+            .hero {
+                min-height: 460px;
+                padding: 60px 6%;
+                background-position: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                width: 92%;
+            }
+
+            .brand-logo {
+                width: 45px;
+                height: 45px;
+            }
+
+            .navbar-brand {
+                gap: 8px;
+            }
+
+            .brand-divider {
+                height: 34px;
+            }
+
+            .brand-text h2 {
+                font-size: 15px;
+                letter-spacing: 0;
+            }
+
+            .brand-text p {
+                max-width: 165px;
+                font-size: 7px;
+                letter-spacing: 0.7px;
+            }
+
+            .navbar-toggler {
+                width: 38px;
+                height: 38px;
+            }
+
+            .hero {
+                min-height: 420px;
+            }
+
+            .hero h1 {
+                font-size: 33px;
+            }
+
+            .hero p {
+                font-size: 13px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+/* =========================================
+   RESPONSIVE INDEX TONKOM 877
+   LAPTOP - TABLET - ANDROID - IPHONE
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ===== LAPTOP BESAR ===== */
+@media (min-width: 1200px) {
+    .hero-container {
+        max-width: 1450px;
+        margin: 0 auto;
+        gap: 60px;
+    }
+
+    .hero-visual {
+        max-width: 680px;
+    }
+
+    .hero-content {
+        max-width: 680px;
+    }
+
+    .about-tonkom,
+    .ht-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* ===== LAPTOP KECIL ===== */
+@media (min-width: 701px) and (max-width: 1199px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 45px 4%;
+    }
+
+    .photo-frame {
+        height: 450px;
+    }
+
+    .hero-content {
+        padding-top: 40px;
+    }
+
+    .hero-heading h1 {
+        font-size: clamp(26px, 3.5vw, 42px);
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .ht-image-wrapper {
+        min-height: 500px;
+    }
+
+    .ht-product-image {
+        max-width: 330px;
+    }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 850px) {
+    .nav-container {
+        width: 94%;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: 25px;
+        padding: 35px 5%;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 650px;
+        margin: auto;
+        padding: 25px 0 35px;
+    }
+
+    .photo-frame {
+        height: 430px;
+    }
+
+    .hero-heading {
+        text-align: center;
+    }
+
+    .hero-description {
+        max-width: 100%;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-footer {
+        position: static;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .feature-wrapper {
+        padding: 15px;
+    }
+
+    .ht-image-wrapper {
+        min-height: 480px;
+    }
+}
+
+/* ===== ANDROID DAN IPHONE ===== */
+@media (max-width: 700px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    /* NAVBAR */
+    .nav-container {
+        min-height: 75px;
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        gap: 8px;
+    }
+
+    .brand-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand-divider {
+        height: 35px;
+    }
+
+    .brand-text h2 {
+        font-size: 16px;
+    }
+
+    .brand-text p {
+        font-size: 7px;
+        letter-spacing: 0.5px;
+    }
+
+    .navbar-toggler {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-menu {
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    /* HERO */
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 25px 18px 45px;
+    }
+
+    .hero-visual {
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .photo-frame {
+        width: 100%;
+        height: clamp(260px, 75vw, 380px);
+    }
+
+    .hero-content {
+        padding: 20px 0 25px;
+    }
+
+    .logo-wrapper {
+        width: 75px;
+        height: 75px;
+        top: -10px;
+    }
+
+    .hero-heading {
+        text-align: center;
+    }
+
+    .hero-heading h1 {
+        font-size: clamp(25px, 7vw, 36px);
+        overflow-wrap: anywhere;
+    }
+
+    .hero-description {
+        font-size: 13px;
+        line-height: 1.8;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .btn-primary {
+        min-height: 52px;
+        padding: 0 18px;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .hero-footer {
+        position: static;
+        justify-content: center;
+        margin-top: 35px;
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    /* BAGIAN PROFIL TONKOM */
+    .about-tonkom {
+        padding: 65px 0 55px;
+    }
+
+    .about-heading {
+        padding: 0 15px;
+        margin-bottom: 25px;
+    }
+
+    .about-heading h2 {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+    .about-heading p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .feature-wrapper {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .feature-wrapper > div {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .feature-card {
+        padding: 22px 12px;
+    }
+
+    .feature-card h4 {
+        font-size: 17px;
+    }
+
+    .feature-card p {
+        font-size: 13px;
+    }
+
+    /* BAGIAN REPEATER */
+    .feature.section {
+        padding: 55px 0;
+    }
+
+    .feature .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .feature .col-lg-6 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .feature-content {
+        margin-top: 30px;
+    }
+
+    .repeater-title {
+        font-size: 28px;
+    }
+
+    .feature-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .image-content {
+        margin-bottom: 20px;
+    }
+
+    /* BAGIAN HANDY TALKY */
+    .ht-section {
+        padding: 55px 0;
+    }
+
+    .ht-section .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ht-section .col-lg-6 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .ht-title {
+        font-size: clamp(30px, 9vw, 40px);
+    }
+
+    .ht-description {
+        font-size: 13px;
+    }
+
+    .ht-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .ht-comparison {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ht-image-wrapper {
+        min-height: 420px;
+    }
+
+    .ht-product-image {
+        max-width: 270px;
+        max-height: 390px;
+    }
+
+    .ht-circle-one {
+        width: 250px;
+        height: 250px;
+    }
+
+    .ht-circle-two {
+        width: 205px;
+        height: 205px;
+    }
+
+    /* VIDEO */
+    .video-promo {
+        min-height: 250px;
+        background-position: center;
+    }
+
+    /* GALERI FOTO */
+    .testimonial {
+        padding: 50px 0;
+    }
+
+    .testimonial-slider img {
+        width: 190px !important;
+        height: 190px !important;
+        object-fit: cover;
+    }
+
+    /* TOMBOL PLATFORM */
+    .call-to-action-app {
+        padding: 35px 10px;
+    }
+
+    .call-to-action-app .list-inline-item {
+        margin: 6px;
+    }
+
+    .call-to-action-app .btn-rounded-icon {
+        font-size: 12px;
+        padding: 10px 13px;
+    }
+
+    /* FOOTER */
+    footer .footer-main {
+        padding: 45px 0;
+    }
+
+    footer .block-2 {
+        margin-bottom: 25px;
+    }
+
+    footer .block img {
+        max-width: 130px;
+        height: auto;
+    }
+}
+
+/* ===== HP KECIL ===== */
+@media (max-width: 380px) {
+
+    .brand-logo {
+        width: 39px;
+        height: 39px;
+    }
+
+    .brand-text h2 {
+        font-size: 14px;
+    }
+
+    .brand-text p {
+        font-size: 6px;
+    }
+
+    .navbar-toggler {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .hero-heading h1 {
+        font-size: 25px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+    .btn-primary {
+        padding: 0 13px;
+        font-size: 12px;
+    }
+
+    .ht-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .ht-product-image {
+        max-width: 230px;
+    }
+
+    .testimonial-slider img {
+        width: 160px !important;
+        height: 160px !important;
+    }
+}
+
+    </style>
+
+</head>
+<nav class="main-nav">
+  <div class="nav-container">
+
+    <!-- LOGO DAN NAMA -->
+    <a href="index.html" class="navbar-brand">
+      <img src="images/komlek2.png"
+           alt="Logo TONKOM 877"
+           class="brand-logo">
+
+      <span class="brand-divider"></span>
+
+      <div class="brand-text">
+        <h2>TONKOM <span>877</span></h2>
+        <p>Communication and electronics</p>
+      </div>
+    </a>
+
+    <!-- TOMBOL MENU HP -->
+    <div class="nav-actions">
+
+     
+
+      <button class="navbar-toggler"
+              type="button"
+              aria-label="Buka menu"
+              aria-expanded="false"
+              aria-controls="navMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <!-- MENU NAVIGASI -->
+    <ul class="nav-menu" id="navMenu">
+
+      <!-- BERANDA -->
+      <li class="nav-item dropdown active">
+        <a class="nav-link" href="#"
+           aria-expanded="false">
+          <i class="fa-solid fa-house"></i>
+          <span>BERANDA</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li>
+            <a class="dropdown-item" href="index.html">
+              <i class="fa-solid fa-house"></i>
+              <span>BERANDA</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="alusista.html">
+              <i class="fa-solid fa-tower-broadcast"></i>
+              <span>INFO KOMLEK</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="sandi.html">
+              <i class="fa-solid fa-lock"></i>
+              <span>SANDI TNI AD</span>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <!-- DOKUMENTASI KEGIATAN -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#"
+           aria-expanded="false">
+          <i class="fa-solid fa-folder-open"></i>
+          <span>DOKUMENTASI KEGIATAN</span>
+          <i class="fa-solid fa-chevron-down arrow"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li>
+            <a class="dropdown-item" href="team.html">
+              TEAM
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="career.html">
+              KEGIATAN
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="blog.html">
+              GALERI
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <!-- ABOUT -->
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>ABOUT</span>
+        </a>
+      </li>
+
+      <!-- CONTACT -->
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">
+          <i class="fa-solid fa-envelope"></i>
+          <span>CONTACT</span>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+<style>
+
+/* =========================
+   RESET DAN FONT
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================
+   NAVBAR UTAMA
+========================= */
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
+    background: linear-gradient(
+        110deg,
+        rgba(5, 24, 17, 0.98),
+        rgba(13, 43, 30, 0.96),
+        rgba(5, 22, 17, 0.98)
+    );
+
+    border-bottom: 2px solid #b5a05a;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+
+/* GARIS DEKORASI ATAS */
+
+.main-nav::before {
+    content: "";
+    display: block;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #b69b50,
+        #39db8b,
+        #b69b50,
+        transparent
+    );
+}
+
+/* CONTAINER */
+
+.nav-container {
+    width: min(1250px, 92%);
+    min-height: 94px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* =========================
+   LOGO DAN NAMA
+========================= */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-shrink: 0;
+}
+
+.brand-logo {
+    width: 66px;
+    height: 66px;
+    object-fit: contain;
+
+    filter: drop-shadow(
+        0 0 7px rgba(193,167,81,0.2)
+    );
+}
+
+.brand-divider {
+    width: 2px;
+    height: 48px;
+
+    background: linear-gradient(
+        transparent,
+        #c6ad62,
+        transparent
+    );
+}
+
+.brand-text h2 {
+    margin-bottom: 2px;
+    line-height: 1.1;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.brand-text h2 span {
+    color: #41d98a;
+}
+
+.brand-text p {
+    margin: 0;
+    line-height: 1.2;
+    color: #d2d8d2;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* =========================
+   MENU NAVBAR
+========================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 15px 14px;
+
+    color: #e7eee8;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+
+.nav-link > i:first-child {
+    color: #c5ac62;
+    font-size: 14px;
+}
+
+.nav-link .arrow {
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* HOVER MENU */
+
+.nav-link:hover,
+.nav-item.active > .nav-link {
+    color: #49e39a;
+    background: rgba(55,191,119,0.09);
+}
+
+.nav-link:hover > i:first-child,
+.nav-item.active > .nav-link > i:first-child {
+    color: #49e39a;
+}
+
+/* GARIS MENU AKTIF */
+
+.nav-item.active > .nav-link::after {
+    content: "";
+    position: absolute;
+
+    left: 14px;
+    right: 14px;
+    bottom: 5px;
+
+    height: 2px;
+    background: #42d98a;
+    border-radius: 5px;
+}
+
+/* =========================
+   DROPDOWN MENU
+========================= */
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+
+    min-width: 225px;
+    padding: 9px;
+
+    background: rgba(7,23,18,0.98);
+
+    border: 1px solid rgba(182,155,80,0.4);
+    border-radius: 10px;
+
+    box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: 0.25s ease;
+}
+
+/* DROPDOWN TERBUKA */
+
+.nav-item:hover > .dropdown-menu,
+.nav-item:focus-within > .dropdown-menu,
+.nav-item.open > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 12px 13px;
+
+    color: #dce7df;
+    font-size: 12px;
+    font-weight: 600;
+
+    border-radius: 6px;
+    transition: 0.25s ease;
+}
+
+.dropdown-menu a i {
+    color: #c5ac62;
+    font-size: 11px;
+}
+
+/* HOVER DROPDOWN */
+
+.dropdown-menu a:hover,
+.dropdown-menu a.active {
+    color: #4be49a;
+
+    background: linear-gradient(
+        90deg,
+        rgba(43,158,96,0.2),
+        rgba(43,158,96,0.04)
+    );
+
+    padding-left: 18px;
+}
+
+/* =========================
+   TOMBOL KANAN
+========================= */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-btn,
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    color: #f3f7f3;
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.13);
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-btn:hover,
+.navbar-toggler:hover {
+    color: #4be49a;
+    border-color: #4be49a;
+    background: rgba(55,191,119,0.12);
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 18px;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 1050px) {
+
+    .nav-container {
+        width: 94%;
+        gap: 10px;
+    }
+
+    .brand-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .brand-text h2 {
+        font-size: 19px;
+    }
+
+    .brand-text p {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .nav-link {
+        padding: 13px 9px;
+        font-size: 11px;
+    }
+
+    .nav-actions {
+        gap: 5px;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 850px) {
+
+    .nav-container {
+        min-height: 82px;
+        flex-wrap: wrap;
+        padding: 12px 0;
+    }
+
+    .brand-logo {
+        width: 54px;
+        height: 54px;
+    }
+
+    .brand-text h2 {
+        font-size: 18px;
+    }
+
+    .brand-text p {
+        font-size: 8px;
+    }
+
+    .brand-divider {
+        height: 40px;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        width: 100%;
+        gap: 4px;
+
+        padding: 12px 0 8px;
+
+        border-top: 1px solid rgba(255,255,255,0.12);
+
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        justify-content: flex-start;
+        padding: 14px;
+        font-size: 12px;
+    }
+
+    .nav-link .arrow {
+        margin-left: auto;
+    }
+
+    .nav-item.active > .nav-link::after {
+        display: none;
+    }
+
+    /* DROPDOWN HP */
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+
+        min-width: 0;
+        margin: 3px 0 8px;
+        padding: 6px;
+
+        background: rgba(0,0,0,0.18);
+
+        border: 0;
+        border-left: 2px solid #b69b50;
+        border-radius: 0;
+
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        transition: none;
+    }
+
+    .nav-item.open > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding: 12px 14px;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP KECIL
+========================= */
+
+@media (max-width: 480px) {
+
+    .nav-container {
+        width: 92%;
+    }
+
+    .brand-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .navbar-brand {
+        gap: 8px;
+    }
+
+    .brand-divider {
+        height: 34px;
+    }
+
+    .brand-text h2 {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    .brand-text p {
+        max-width: 165px;
+        font-size: 7px;
+        letter-spacing: 0.7px;
+    }
+
+    .navbar-toggler {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .brand-logo {
+        width: 39px;
+        height: 39px;
+    }
+
+    .brand-text h2 {
+        font-size: 14px;
+    }
+
+    .brand-text p {
+        font-size: 6px;
+    }
+
+    .navbar-toggler {
+        width: 35px;
+        height: 35px;
+    }
+}
+</style>
+
+<script>
+    
+// ===============================
+// NAVBAR TONKOM 877
+// ===============================
+
+const toggler = document.querySelector(".navbar-toggler");
+const navMenu = document.querySelector(".nav-menu");
+
+// TOGGLE MENU HP
+toggler.addEventListener("click", function () {
+
+    const isOpen = navMenu.classList.toggle("show");
+
+    toggler.setAttribute("aria-expanded", isOpen);
+
+    toggler.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+
+});
+
+// DROPDOWN MENU HP
+document.querySelectorAll(
+    ".nav-item > .nav-link"
+).forEach(link => {
+
+    link.addEventListener("click", function (event) {
+
+        const item = this.parentElement;
+
+        if (
+            window.innerWidth <= 850 &&
+            item.querySelector(":scope > .dropdown-menu")
+        ) {
+
+            event.preventDefault();
+
+            // TUTUP DROPDOWN LAIN
+            item.parentElement.querySelectorAll(
+                ":scope > .nav-item.open"
+            ).forEach(other => {
+
+                if (other !== item) {
+                    other.classList.remove("open");
+
+                    const otherLink = other.querySelector(
+                        ":scope > .nav-link"
+                    );
+
+                    if (otherLink) {
+                        otherLink.setAttribute(
+                            "aria-expanded", "false"
+                        );
+                    }
+                }
+
+            });
+
+            // BUKA / TUTUP DROPDOWN
+            const isOpen = item.classList.toggle("open");
+
+            this.setAttribute("aria-expanded", isOpen);
+
+        }
+
+    });
+
+});
+
+// TUTUP MENU SETELAH MEMILIH HALAMAN
+document.querySelectorAll(
+    ".nav-menu a:not(.nav-link)"
+).forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        if (window.innerWidth <= 850) {
+
+            navMenu.classList.remove("show");
+
+            toggler.setAttribute(
+                "aria-expanded", "false"
+            );
+
+            toggler.innerHTML =
+                '<i class="fa-solid fa-bars"></i>';
+
+        }
+
+    });
+
+});
+
+</script>
+
+
+<body>
+
+<style>
+:root {
+    --bg: #08120d;
+    --surface: #13251a;
+    --surface2: #1b3424;
+    --gold: #e1bf75;
+    --green: #7caa7b;
+    --text: #f2f5ee;
+    --muted: #b4c5b5;
+    --line: rgba(225,191,117,.22);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+.container { width: min(1180px, 92%); margin: auto; }
+.gold { color: var(--gold); }
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(10,23,14,.96);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-content {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.brand i { color: var(--gold); margin-right: 10px; }
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+.nav-links a {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    transition: .2s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+/* HERO */
+.hero {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 80% 45%, rgba(125,168,106,.22), transparent 38%),
+        linear-gradient(120deg, #0c1c12, #1d3826 55%, #08130d);
+}
+
+.hero::before,
+.section-pattern::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(225,191,117,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(225,191,117,.055) 1px, transparent 1px);
+    background-size: 42px 42px;
+}
+
+.hero::after {
+    content: "877";
+    position: absolute;
+    right: 4%;
+    bottom: -100px;
+    font-size: clamp(180px, 30vw, 420px);
+    font-weight: 900;
+    color: rgba(225,191,117,.035);
+    pointer-events: none;
+}
+
+.hero-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 50px;
+    padding: 85px 0;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.13;
+    margin: 20px 0;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    max-width: 590px;
+    color: #c4d2c3;
+    font-size: 16px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 22px;
+    border: 1px solid #66775b;
+    border-radius: 6px;
+    background: #29432f;
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+    transition: .25s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold);
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: #122015;
+    border-color: var(--gold);
+}
+
+.hero-status {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    color: #b9cbb8;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #8bc68b;
+    margin-right: 8px;
+    box-shadow: 0 0 12px #8bc68b;
+}
+
+/* RADAR VISUAL */
+.radar-panel {
+    position: relative;
+    aspect-ratio: 1;
+    width: min(100%, 390px);
+    margin: auto;
+    border: 1px solid rgba(225,191,117,.25);
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(225,191,117,.09), transparent 65%);
+    display: grid;
+    place-items: center;
+}
+
+.radar-ring {
+    position: absolute;
+    border: 1px solid rgba(225,191,117,.3);
+    border-radius: 50%;
+}
+
+.ring1 { width: 88%; height: 88%; }
+.ring2 { width: 65%; height: 65%; border-style: dashed; }
+.ring3 { width: 40%; height: 40%; }
+
+.radar-sweep {
+    position: absolute;
+    inset: 6%;
+    border-radius: 50%;
+    background: conic-gradient(
+        transparent 0deg,
+        transparent 280deg,
+        rgba(150,220,145,.22) 355deg,
+        transparent 360deg
+    );
+    animation: rotateRadar 9s linear infinite;
+}
+
+.radar-icon {
+    position: relative;
+    z-index: 2;
+    font-size: 110px;
+    color: var(--gold);
+    filter: drop-shadow(0 0 25px rgba(225,191,117,.35));
+}
+
+.radar-label {
+    position: absolute;
+    bottom: 3%;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--gold);
+}
+
+@keyframes rotateRadar {
+    to { transform: rotate(360deg); }
+}
+
+/* SECTIONS */
+.section {
+    position: relative;
+    padding: 90px 0;
+    scroll-margin-top: 85px;
+}
+
+.section-pattern {
+    background: linear-gradient(135deg, #112218, #0b1911);
+    overflow: hidden;
+}
+
+.section-pattern > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.section-head {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-head h2 {
+    font-size: clamp(27px, 4vw, 39px);
+    margin: 12px 0;
+}
+
+.section-head p {
+    color: var(--muted);
+    max-width: 700px;
+    margin: auto;
+}
+
+.intro-panel {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 25px;
+    align-items: center;
+    padding: 38px;
+    background: linear-gradient(135deg, #203b29, #13251a);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--gold);
+    border-radius: 12px;
+}
+
+.intro-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    background: rgba(225,191,117,.1);
+    color: var(--gold);
+    font-size: 38px;
+}
+
+.intro-panel p { color: var(--muted); }
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 22px;
+}
+
+.feature-card {
+    position: relative;
+    padding: 30px;
+    background: linear-gradient(145deg, #203827, #13251a);
+    border: 1px solid #3b543d;
+    border-radius: 12px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    right: -45px;
+    top: -45px;
+    border: 1px solid rgba(225,191,117,.18);
+    border-radius: 50%;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--gold);
+    box-shadow: 0 18px 35px rgba(0,0,0,.25);
+}
+
+.card-icon {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    background: rgba(225,191,117,.11);
+    border-radius: 10px;
+    color: var(--gold);
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.card-number {
+    position: absolute;
+    right: 23px;
+    bottom: 20px;
+    color: rgba(225,191,117,.3);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.feature-card h3 { font-size: 18px; margin-bottom: 10px; }
+.feature-card p { font-size: 14px; color: var(--muted); }
+.feature-card .btn { margin-top: 20px; }
+
+/* PRINCIPLES */
+.principle-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 18px;
+}
+
+.principle {
+    background: #1c3424;
+    border: 1px solid #3c563e;
+    border-radius: 12px;
+    padding: 25px 18px;
+    text-align: center;
+}
+
+.principle summary {
+    cursor: pointer;
+    color: var(--gold);
+    font-weight: 800;
+    list-style: none;
+}
+
+.principle summary::-webkit-details-marker { display: none; }
+.principle i { display: block; font-size: 30px; margin-bottom: 15px; }
+.principle p { color: var(--muted); font-size: 13px; margin-top: 12px; }
+
+/* LAB */
+.lab {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: linear-gradient(135deg, #1c3324, #112219);
+    border: 1px solid #53684b;
+    border-radius: 14px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.18);
+}
+
+.lab-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+.lab-header h3 { color: var(--gold); }
+.lab-header span { font-size: 11px; color: #9ac99a; }
+
+.lab label {
+    display: block;
+    margin: 15px 0 8px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.lab textarea, .lab select, .lab input {
+    width: 100%;
+    padding: 14px;
+    background: #09170e;
+    border: 1px solid #52664c;
+    border-radius: 7px;
+    color: white;
+    outline: none;
+}
+
+.lab textarea { min-height: 115px; resize: vertical; }
+.lab textarea:focus, .lab select:focus, .lab input:focus {
+    border-color: var(--gold);
+}
+
+.lab-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.result {
+    padding: 20px;
+    min-height: 75px;
+    background: #08140c;
+    border: 1px solid #456044;
+    border-radius: 8px;
+    color: #e8ce8c;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.note { font-size: 12px; color: var(--muted); margin-top: 15px; }
+
+/* MODAL */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0,0,0,.8);
+    backdrop-filter: blur(8px);
+}
+.modal.active { display: flex; }
+.modal-box {
+    width: min(600px,100%);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 35px;
+    background: linear-gradient(135deg,#203b29,#101f16);
+    border: 1px solid var(--gold);
+    border-radius: 15px;
+}
+.modal-box h2 { color: var(--gold); }
+.modal-box h3 { color: var(--gold); margin-top: 20px; }
+.modal-box p { color: #d0dbce; }
+.modal-close { float: right; }
+
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: #07110b;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+}
+.footer strong { color: var(--gold); }
+
+@media(max-width: 950px) {
+    .hero-grid { grid-template-columns: 1fr; text-align: center; }
+    .hero p { margin: auto; }
+    .hero-actions, .hero-status { justify-content: center; }
+    .radar-panel { width: 280px; }
+    .cards { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .principle-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+
+@media(max-width: 600px) {
+    .nav-content { flex-direction: column; padding: 15px 0; }
+    .nav-links { justify-content: center; gap: 12px; }
+    .nav-links a { font-size: 11px; }
+    .hero-grid { padding: 65px 0; }
+    .section { padding: 60px 0; }
+    .cards, .principle-grid { grid-template-columns: 1fr; }
+    .intro-panel { grid-template-columns: 1fr; padding: 25px; }
+    .lab { padding: 22px; }
+    .radar-icon { font-size: 85px; }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+</style>
+
+<!-- NAVBAR -->
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-grid">
+        <div>
+            <!-- <span class="eyebrow">KOMUNIKASI DAN ELEKTRONIKA</span> -->
+            <h1>PERSANDIAN<br><span class="gold">TNI ANGKATAN DARAT</span></h1>
+            <p>
+                Mengenal dasar persandian, kriptografi klasik,
+                dan keamanan informasi melalui media pembelajaran
+                interaktif dengan konsep teknologi militer modern.
+            </p>
+            <div class="hero-actions">
+                <a href="#materi" class="btn btn-gold">
+                    JELAJAHI MATERI 
+                </a>
+                <a href="#simulasi" class="btn">
+    COBA SIMULASI
+</a>
+            </div>
+            <div class="hero-status">
+                <span><i class="status-dot"></i> MEDIA EDUKASI AKTIF</span>
+                <span>YONIF TP 877/BIINMAFFO</span>
+            </div>
+        </div>
+
+        <div class="radar-panel" aria-hidden="true">
+            <div class="radar-sweep"></div>
+            <div class="radar-ring ring1"></div>
+            <div class="radar-ring ring2"></div>
+            <div class="radar-ring ring3"></div>
+            <i class="fa-solid fa-shield-halved radar-icon"></i>
+            <span class="radar-label">KOMLEK BIINMAFFO</span>
+        </div>
+    </div>
+</section>
+
+<!-- PENGERTIAN -->
+<section class="section" id="pengertian">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">01 / PENGETAHUAN DASAR</span>
+            <h2>MENGENAL <span class="gold">PERSANDIAN</span></h2>
+            <p>Memahami peran keamanan informasi dalam komunikasi.</p>
+        </div>
+        <div class="intro-panel">
+            <div class="intro-icon">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div>
+                <h3>APA ITU PERSANDIAN?</h3>
+                <p>
+                    Persandian merupakan bidang yang berkaitan dengan
+                    pengamanan informasi menggunakan metode, teknologi,
+                    dan prosedur tertentu. Dalam konteks militer,
+                    keamanan informasi mendukung kerahasiaan komunikasi,
+                    integritas data, serta kelancaran koordinasi
+                    dan sistem komando serta pengendalian.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JENIS SANDI -->
+<section class="section section-pattern" id="materi">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">02 / MATERI INTERAKTIF</span>
+            <h2>JENIS-JENIS <span class="gold">SANDI</span></h2>
+            <p>Klik setiap kartu untuk membuka penjelasan dan contoh.</p>
+        </div>
+
+        <div class="cards">
+            <article class="feature-card">
+                <span class="card-number">01</span>
+                <div class="card-icon"><i class="fa-solid fa-wave-square"></i></div>
+                <h3>SANDI MORSE</h3>
+                <p>Representasi huruf dan angka menggunakan titik serta garis.</p>
+                <button class="btn" onclick="bukaMateri('morse')">PELAJARI <i class="fa-solid fa-arrow-right"></i></button>
+            </article>
+
+            <article class="feature-card">
+                <span class="card-number">02</span>
+                <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
+                <h3>SANDI CAESAR</h3>
+                <p>Penyandian klasik dengan menggeser posisi huruf alfabet.</p>
+                <button class="btn" onclick="bukaMateri('caesar')">PELAJARI <i class="fa-solid fa-arrow-right"></i></button>
+            </article>
+
+            <article class="feature-card">
+                <span class="card-number">03</span>
+                <div class="card-icon"><i class="fa-solid fa-key"></i></div>
+                <h3>SANDI SUBSTITUSI</h3>
+                <p>Mengganti karakter menggunakan aturan penggantian tertentu.</p>
+                <button class="btn" onclick="bukaMateri('substitusi')">PELAJARI <i class="fa-solid fa-arrow-right"></i></button>
+            </article>
+
+            <article class="feature-card">
+                <span class="card-number">04</span>
+                <div class="card-icon"><i class="fa-solid fa-arrows-left-right"></i></div>
+                <h3>SANDI TRANSPOSISI</h3>
+                <p>Mengubah urutan karakter tanpa mengganti karakter aslinya.</p>
+                <button class="btn" onclick="bukaMateri('transposisi')">PELAJARI <i class="fa-solid fa-arrow-right"></i></button>
+            </article>
+
+            <article class="feature-card">
+                <span class="card-number">05</span>
+                <div class="card-icon"><i class="fa-solid fa-hashtag"></i></div>
+                <h3>SANDI VIGENERE</h3>
+                <p>Kriptografi klasik menggunakan kata kunci untuk pergeseran huruf.</p>
+                <button class="btn" onclick="bukaMateri('vigenere')">PELAJARI <i class="fa-solid fa-arrow-right"></i></button>
+            </article>
+
+            <article class="feature-card">
+                <span class="card-number">06</span>
+                <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+                <h3>KRIPTOGRAFI MODERN</h3>
+                <p>Konsep perlindungan data menggunakan algoritma kriptografi digital.</p>
+                <button class="btn" onclick="bukaMateri('modern')">PELAJARI <i class="fa-solid fa-arrow-right"></i></button>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- PRINSIP KEAMANAN -->
+<section class="section" id="prinsip">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">03 / PERLINDUNGAN INFORMASI</span>
+            <h2>PRINSIP <span class="gold">KEAMANAN</span></h2>
+            <p>Klik masing-masing panel untuk melihat penjelasan.</p>
+        </div>
+        <div class="principle-grid">
+            <details class="principle">
+                <summary><i class="fa-solid fa-eye-slash"></i>KERAHASIAAN</summary>
+                <p>Informasi hanya dapat diakses oleh pihak yang memiliki kewenangan.</p>
+            </details>
+            <details class="principle">
+                <summary><i class="fa-solid fa-check-double"></i>INTEGRITAS</summary>
+                <p>Informasi dijaga agar tetap akurat dan tidak diubah tanpa izin.</p>
+            </details>
+            <details class="principle">
+                <summary><i class="fa-solid fa-server"></i>KETERSEDIAAN</summary>
+                <p>Informasi tersedia ketika dibutuhkan oleh pengguna yang berhak.</p>
+            </details>
+            <details class="principle">
+                <summary><i class="fa-solid fa-fingerprint"></i>AUTENTIKASI</summary>
+                <p>Identitas pengguna atau sumber informasi dapat diverifikasi.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- SIMULASI -->
+<section class="section section-pattern" id="simulasi">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">04 / LABORATORIUM EDUKASI</span>
+            <h2>SIMULASI <span class="gold">PERSANDIAN</span></h2>
+            <p>Gunakan simulasi sandi klasik untuk mempelajari enkripsi dan dekripsi.</p>
+        </div>
+
+        <div class="lab">
+            <div class="lab-header">
+                <h3><i class="fa-solid fa-terminal"></i> CIPHER LAB</h3>
+                <span><i class="status-dot"></i> SIMULASI SIAP</span>
+            </div>
+
+            <label for="jenisSandi">PILIH JENIS SANDI</label>
+            <select id="jenisSandi" onchange="ubahJenisSandi()">
+                <option value="morse">Sandi Morse</option>
+                <option value="caesar">Sandi Caesar</option>
+                <option value="substitusi">Sandi Substitusi (Atbash)</option>
+                <option value="transposisi">Sandi Transposisi (Balik Teks)</option>
+                <option value="vigenere">Sandi Vigenere</option>
+            </select>
+
+            <div id="opsiKunci" hidden>
+                <label for="kunci">KUNCI / PERGESERAN</label>
+                <input id="kunci" type="text" value="3">
+            </div>
+
+            <label for="pesan">MASUKKAN TEKS LATIHAN</label>
+            <textarea id="pesan" placeholder="Contoh: BELAJAR KOMLEK"></textarea>
+
+            <div class="lab-actions">
+                <button class="btn btn-gold" onclick="jalankan('encode')">
+                    <i class="fa-solid fa-lock"></i> ENKRIPSI
+                </button>
+                <button class="btn" onclick="jalankan('decode')">
+                    <i class="fa-solid fa-unlock"></i> DEKRIPSI
+                </button>
+                <button class="btn" onclick="salinHasil()">
+                    <i class="fa-solid fa-copy"></i> SALIN
+                </button>
+                <button class="btn" onclick="resetSimulasi()">
+                    <i class="fa-solid fa-rotate"></i> RESET
+                </button>
+            </div>
+
+            <label>HASIL SIMULASI</label>
+            <div class="result" id="hasil" aria-live="polite">
+                Hasil akan muncul di sini.
+            </div>
+
+            <p class="note">
+                Simulasi hanya untuk edukasi sandi klasik.
+                Bukan sistem persandian operasional TNI AD.
+                Jangan memasukkan informasi rahasia.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL MATERI -->
+<div class="modal" id="modalMateri" role="dialog"
+     aria-modal="true" aria-labelledby="judulModal">
+    <div class="modal-box">
+        <button class="btn modal-close" onclick="tutupMateri()" aria-label="Tutup">✕</button>
+        <h2 id="judulModal"></h2>
+        <p id="isiModal"></p>
+        <h3>FUNGSI</h3>
+        <p id="fungsiModal"></p>
+        <h3>CONTOH</h3>
+        <p id="contohModal"></p>
+        <button class="btn btn-gold" id="cobaMateri" onclick="cobaDariMateri()">
+            COBA SIMULASI
+        </button>
+    </div>
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <strong>YONIF TP 877/BIINMAFFO</strong>
+    <p>Media Edukasi Komunikasi dan Elektronika</p>
+
+    <div class="testimonial">
+        <ul class="list-inline meta" style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        ">
+            <li class="list-inline-item">
+                <img src="images/profil.jpg" alt="Profil" style="
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    
+                ">
+            </li>
+
+            <li class="list-inline-item">
+                Indra_senkomm
+            </li>
+        </ul>
+    </div>
+
+    <a href="index.html" class="btn">
+        KEMBALI KE BERANDA
+    </a>
+</footer>
+
+
+<style>
+    
+/* ==================================
+   FONT MILITARY MODERN - KOMLEK 877
+   ================================== */
+
+/* FONT UTAMA */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* JUDUL UTAMA */
+.hero h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: clamp(45px, 6vw, 78px);
+    letter-spacing: 1.5px;
+    line-height: 1.05;
+    text-transform: uppercase;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* WARNA EMAS PADA JUDUL */
+.hero h1 .gold {
+    background: linear-gradient(
+        135deg,
+        #fff0b5,
+        #e1bf75,
+        #bc9246
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* JUDUL SETIAP BAGIAN */
+.section-head h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: clamp(32px, 4vw, 46px);
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+}
+
+/* LABEL KECIL DI ATAS JUDUL */
+.eyebrow {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* JUDUL KARTU MATERI */
+.feature-card h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 1.2;
+}
+
+/* JUDUL PENGERTIAN */
+.intro-panel h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+/* TOMBOL */
+.btn {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+/* TEKS ISI MATERI */
+.hero p,
+.section-head p,
+.feature-card p,
+.intro-panel p,
+.modal-box p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+/* JUDUL LAB SIMULASI */
+.lab-header h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* LABEL FORM SIMULASI */
+.lab label {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* INPUT DAN HASIL SIMULASI */
+.lab textarea,
+.lab input,
+.lab select,
+.result {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* PRINSIP KEAMANAN */
+.principle summary {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* MODAL MATERI */
+.modal-box h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.modal-box h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* FOOTER */
+.footer strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.footer .testimonial {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: clamp(38px, 10vw, 52px);
+        letter-spacing: 0.5px;
+    }
+
+    .section-head h2 {
+        font-size: 33px;
+    }
+
+    .feature-card h3 {
+        font-size: 22px;
+    }
+}
+
+</style>
+<script>
+const materi = {
+    morse: {
+        judul: "SANDI MORSE",
+        isi: "Sandi Morse merepresentasikan huruf dan angka menggunakan kombinasi titik dan garis.",
+        fungsi: "Digunakan untuk komunikasi sinyal melalui bunyi, cahaya, atau media lain.",
+        contoh: "SOS = ... --- ..."
+    },
+    caesar: {
+        judul: "SANDI CAESAR",
+        isi: "Kriptografi klasik dengan menggeser huruf berdasarkan jumlah posisi tertentu.",
+        fungsi: "Mempelajari konsep dasar enkripsi dan dekripsi.",
+        contoh: "Pergeseran 3: ABC menjadi DEF."
+    },
+    substitusi: {
+        judul: "SANDI SUBSTITUSI",
+        isi: "Metode penggantian karakter. Simulasi ini menggunakan Atbash.",
+        fungsi: "Memahami konsep penggantian karakter dalam kriptografi.",
+        contoh: "Atbash: ABC menjadi ZYX."
+    },
+    transposisi: {
+        judul: "SANDI TRANSPOSISI",
+        isi: "Metode mengubah susunan karakter. Simulasi menggunakan pembalikan teks.",
+        fungsi: "Mempelajari konsep perubahan urutan karakter.",
+        contoh: "KOMLEK menjadi KELMOK."
+    },
+    vigenere: {
+        judul: "SANDI VIGENERE",
+        isi: "Metode klasik menggunakan kata kunci untuk menentukan pergeseran huruf.",
+        fungsi: "Mempelajari konsep penggunaan kunci dalam penyandian.",
+        contoh: "ATTACKATDAWN dengan kunci LEMON menjadi LXFOPVEFRNHR."
+    },
+    modern: {
+        judul: "KRIPTOGRAFI MODERN",
+        isi: "Penggunaan algoritma matematika untuk melindungi informasi digital.",
+        fungsi: "Mendukung kerahasiaan, integritas, dan autentikasi data.",
+        contoh: "AES merupakan algoritma enkripsi, sedangkan SHA-256 adalah fungsi hash."
+    }
+};
+
+let materiAktif = "morse";
+let fokusSebelumnya = null;
+
+function bukaMateri(jenis) {
+    const data = materi[jenis];
+    materiAktif = jenis;
+    fokusSebelumnya = document.activeElement;
+
+    document.getElementById("judulModal").textContent = data.judul;
+    document.getElementById("isiModal").textContent = data.isi;
+    document.getElementById("fungsiModal").textContent = data.fungsi;
+    document.getElementById("contohModal").textContent = data.contoh;
+    document.getElementById("cobaMateri").hidden = jenis === "modern";
+    document.getElementById("modalMateri").classList.add("active");
+    document.body.style.overflow = "hidden";
+    document.querySelector(".modal-close").focus();
+}
+
+function tutupMateri() {
+    document.getElementById("modalMateri").classList.remove("active");
+    document.body.style.overflow = "";
+    if (fokusSebelumnya) fokusSebelumnya.focus();
+}
+
+function cobaDariMateri() {
+    document.getElementById("jenisSandi").value = materiAktif;
+    ubahJenisSandi();
+    tutupMateri();
+    document.getElementById("simulasi").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+document.getElementById("modalMateri").addEventListener("click", e => {
+    if (e.target.id === "modalMateri") tutupMateri();
+});
+
+document.addEventListener("keydown", e => {
+    if (e.key === "Escape" &&
+        document.getElementById("modalMateri").classList.contains("active")) {
+        tutupMateri();
+    }
+});
+
+const morseMap = {
+    A:".-", B:"-...", C:"-.-.", D:"-..", E:".",
+    F:"..-.", G:"--.", H:"....", I:"..", J:".---",
+    K:"-.-", L:".-..", M:"--", N:"-.", O:"---",
+    P:".--.", Q:"--.-", R:".-.", S:"...", T:"-",
+    U:"..-", V:"...-", W:".--", X:"-..-", Y:"-.--",
+    Z:"--..", 0:"-----", 1:".----", 2:"..---",
+    3:"...--", 4:"....-", 5:".....", 6:"-....",
+    7:"--...", 8:"---..", 9:"----.",
+    ".":".-.-.-", ",":"--..--", "?":"..--.."
+};
+
+const reverseMorse = Object.fromEntries(
+    Object.entries(morseMap).map(([a,b]) => [b,a])
+);
+
+function ubahJenisSandi() {
+    const jenis = document.getElementById("jenisSandi").value;
+    const opsi = document.getElementById("opsiKunci");
+    const kunci = document.getElementById("kunci");
+
+    opsi.hidden = !["caesar","vigenere"].includes(jenis);
+
+    if (jenis === "caesar") {
+        kunci.value = "3";
+        kunci.placeholder = "Contoh: 3";
+    } else if (jenis === "vigenere") {
+        kunci.value = "LEMON";
+        kunci.placeholder = "Contoh: LEMON";
+    }
+
+    document.getElementById("hasil").textContent =
+        "Hasil akan muncul di sini.";
+}
+
+function caesar(teks, shift) {
+    return teks.replace(/[a-z]/gi, huruf => {
+        const kode = huruf.charCodeAt(0);
+        const dasar = kode >= 97 ? 97 : 65;
+        return String.fromCharCode(
+            ((kode - dasar + shift % 26 + 26) % 26) + dasar
+        );
+    });
+}
+
+function atbash(teks) {
+    return teks.replace(/[a-z]/gi, huruf => {
+        const kode = huruf.charCodeAt(0);
+        const dasar = kode >= 97 ? 97 : 65;
+        return String.fromCharCode(dasar + 25 - (kode - dasar));
+    });
+}
+
+function vigenere(teks, kunci, decode) {
+    let posisi = 0;
+    kunci = kunci.toUpperCase();
+
+    return teks.replace(/[a-z]/gi, huruf => {
+        const kode = huruf.charCodeAt(0);
+        const dasar = kode >= 97 ? 97 : 65;
+        const geser = kunci.charCodeAt(posisi % kunci.length) - 65;
+        posisi++;
+        return String.fromCharCode(
+            ((kode - dasar + (decode ? -geser : geser) + 26) % 26) + dasar
+        );
+    });
+}
+
+function jalankan(mode) {
+    const jenis = document.getElementById("jenisSandi").value;
+    const teks = document.getElementById("pesan").value;
+    const kunci = document.getElementById("kunci").value.trim();
+    const hasil = document.getElementById("hasil");
+    const decode = mode === "decode";
+
+    if (!teks.trim()) {
+        hasil.textContent = "Masukkan teks terlebih dahulu.";
+        return;
+    }
+
+    try {
+        let output = "";
+
+        switch (jenis) {
+            case "morse":
+                if (decode) {
+                    output = teks.trim().split(/\s+\/\s+/).map(kata =>
+                        kata.split(/\s+/).map(kode => {
+                            if (!(kode in reverseMorse))
+                                throw Error("Kode Morse tidak dikenal: " + kode);
+                            return reverseMorse[kode];
+                        }).join("")
+                    ).join(" ");
+                } else {
+                    output = teks.toUpperCase().trim().split(/\s+/).map(kata =>
+                        [...kata].map(huruf => {
+                            if (!(huruf in morseMap))
+                                throw Error("Karakter tidak didukung: " + huruf);
+                            return morseMap[huruf];
+                        }).join(" ")
+                    ).join(" / ");
+                }
+                break;
+
+            case "caesar":
+                if (!/^-?\d+$/.test(kunci))
+                    throw Error("Kunci Caesar harus berupa bilangan bulat.");
+                output = caesar(teks, (decode ? -1 : 1) * (Number(kunci) % 26));
+                break;
+
+            case "substitusi":
+                output = atbash(teks);
+                break;
+
+            case "transposisi":
+                output = [...teks].reverse().join("");
+                break;
+
+            case "vigenere":
+                if (!/^[a-z]+$/i.test(kunci))
+                    throw Error("Kunci Vigenere harus berupa huruf A-Z.");
+                output = vigenere(teks, kunci, decode);
+                break;
+        }
+
+        hasil.textContent = output;
+    } catch (error) {
+        hasil.textContent = error.message;
+    }
+}
+
+async function salinHasil() {
+    const hasil = document.getElementById("hasil").textContent.trim();
+    if (!hasil || hasil === "Hasil akan muncul di sini.") {
+        alert("Belum ada hasil untuk disalin.");
+        return;
+    }
+
+    try {
+        await navigator.clipboard.writeText(hasil);
+        alert("Hasil berhasil disalin.");
+    } catch {
+        alert("Gagal menyalin. Pilih dan salin hasil secara manual.");
+    }
+}
+
+function resetSimulasi() {
+    document.getElementById("pesan").value = "";
+    document.getElementById("hasil").textContent =
+        "Hasil akan muncul di sini.";
+}
+
+ubahJenisSandi();
+</script>
+
+</body>
+
+
+</html>
